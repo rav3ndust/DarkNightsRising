@@ -32,12 +32,12 @@ read -p "Please enter LOOK or BACK AWAY to decide: " LOOKORBACK
 		     flite -voice rms "You feel terrified. You don't know what to do next, only that your heart feels like it is sinking into your chest." & dialog --msgbox "You feel terrified. You don't know what to do next, only that your heart feels like it is sinking into your chest." 100 50 
              flite -voice rms "You hear the sound of a gust of wind as you are seemingly pulled into the mirror." & dialog --msgbox "You hear the sound of a gust of wind as you are seemingly pulled into the mirror." 100 50 
              flite -voice rms "It is time to explore your inner demons, $NAME. Press enter to continue." & dialog --msgbox "It is time to explore your inner demons, $NAME. Press ENTER to continue." 100 50 
-             exit && ./second-scene.sh
+             ./second-scene.sh		# run the 'second-scene.sh' script to launch into the second scene of the game
         else flite -voice rms "You begin to back away slowly, only to hear a huge howl." & dialog --msgbox "You begin to back away slowly, only to hear a huge howl." 100 50
              flite -voice rms "You wonder what it could have been, only to see a demonic face appearing in the mirror." & dialog --msgbox "You wonder what it could have been, only to see a demonic face appearing in the mirror." 100 50
              flite -voice rms "Out of the blue, you hear an evil voice shout the following. Hello, $CHARNAME of $PLACE. I know your heart, and I know your spirit. You are not the only one of the $RACE kind feeling this way. Together, we can help you realize your true potential." & dialog --msgbox "Out of the blue, you hear an evil voice shout the following: 'Hello, $CHARNAME of $PLACE. I know your heart, and I know your spirit. You are not the only one of the $RACE kind feeling this way. Together, we can help you realize your true potential.'" 100 50 
              flite -voice rms "Suddenly, a gust of wind grabs you out of nowhere, and you are forced headfirst into the mirror, whether you like it or not." & dialog --msgbox "Suddenly, a gust of wind grabs you out of nowhere, and you are forced headfirst into the mirror, whether you like it or not." 100 50
              flite -voice rms "It is time to explore your inner demons, $NAME. Press enter to continue." & dialog --msgbox "It is time to explore your inner demons, $NAME. Press ENTER to continue." 100 50 
-             exit && ./second-scene.sh
+             ./second-scene.sh		# run the 'second-scene.sh' script to launch into the second scene of the game
         fi
 exit
