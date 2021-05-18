@@ -76,7 +76,7 @@ read -p "Are you happy with this configuration? Please enter YES or NO: " ANSWER
 		echo "RACE='$RACE'" >> variables.txt	  # append the RACE variable to the textfile
 		echo "PLACE='$PLACE'" >> variables.txt   # append the PLACE variable to the textfile
 		./first-scene.sh		# launch into the first scene of the game
-	else flite -voice rms "Oh no! Let us start again until you get it right." & dialog --msgbox "Oh no! Let us start again until you get it right." 100 50 && exit && ./scene-1.sh
+	else flite -voice rms "Oh no! Let us start again until you get it right." & dialog --msgbox "Oh no! Let us start again until you get it right." 100 50 && exit 
 	# if an answer other than YES is given, the script will exit and reload, giving the player the chance to begin their character creation process again.
 	fi
 exit 
