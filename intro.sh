@@ -24,10 +24,10 @@
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 #
 # Present the player with the introduction. 
-espeak "Hello. Welcome to Dark Night Rising. This is a game about finding yourself, but keep in mind that the journey is not about the destination, but the path it takes to get there." & dialog --msgbox "Hello. Welcome to Dark Night Rising. This is a game about finding yourself, but keep in mind that the journey is not about the destination, but the path it takes to get there." 100 50  
+flite -voice rms "Hello. Welcome to Dark Night Rising. This is a game about finding yourself, but keep in mind that the journey is not about the destination, but the path it takes to get there." & dialog --msgbox "Hello. Welcome to Dark Night Rising. This is a game about finding yourself, but keep in mind that the journey is not about the destination, but the path it takes to get there." 100 50  
 
 # Next, we want the player to introduce themselves to us, and select what kind of experience they would like to have. 
-espeak "I am Raven, your guide through this game. Please tell me a little bit about yourself." & dialog --msgbox "I am Raven, your guide through this game. Please tell me a little bit about yourself." 100 50 
+flite -voice rms "I am Raven, your guide through this game. Please tell me a little bit about yourself." & dialog --msgbox "I am Raven, your guide through this game. Please tell me a little bit about yourself." 100 50 
 #
 # start with NAME. the script should read the user's input as their name, and the variable can be called using NAME from now on.
 # 
@@ -37,35 +37,35 @@ espeak "I am Raven, your guide through this game. Please tell me a little bit ab
 #
 # we will store all of these values as variables using the read command, allowing us to call them again later in dialog boxes.
 #
-espeak "So, wanderer. What is your name? Press enter to continue." & dialog --msgbox "So, wanderer - what is your name? Press ENTER to continue." 100 50  
+flite -voice rms "So, wanderer. What is your name? Press enter to continue." & dialog --msgbox "So, wanderer - what is your name? Press ENTER to continue." 100 50  
 read -p "Please enter your name: " NAME
 
 # accept and verify NAME, move onto the next step 
-espeak "It is nice to meet you, $NAME. Now, let us learn a little more about you." &  dialog --msgbox "It is nice to meet you, $NAME. Now, let us learn a little bit more about you." 100 50 
+flite -voice rms "It is nice to meet you, $NAME. Now, let us learn a little more about you." &  dialog --msgbox "It is nice to meet you, $NAME. Now, let us learn a little bit more about you." 100 50 
 
-espeak "So, tell me, $NAME, what would you like to call your character? Press enter to continue." & dialog --msgbox "So, tell me, $NAME, what would you like to call your character? Press ENTER to continue." 100 50 
+flite -voice rms "So, tell me, $NAME, what would you like to call your character? Press enter to continue." & dialog --msgbox "So, tell me, $NAME, what would you like to call your character? Press ENTER to continue." 100 50 
 
 # take the input for the character name. it will be stored as a variable called CHARNAME. 
 read -p "Please enter a character name now: " CHARNAME 
 
 # accept the input, move onto the next
-espeak "Excellent. What race will $CHARNAME hail from? Be creative. Press enter to continue." & dialog --msgbox "Excellent. What race will $CHARNAME hail from? Be creative. Press ENTER to continue." 100 50
+flite -voice rms "Excellent. What race will $CHARNAME hail from? Be creative. Press enter to continue." & dialog --msgbox "Excellent. What race will $CHARNAME hail from? Be creative. Press ENTER to continue." 100 50
 
 # take input for the race. it will be stored as a variable called RACE. 
 read -p "Please enter your desired race for $CHARNAME: " RACE
 
 # verify the input, move on to the next
-espeak "Cool, so $CHARNAME is from the $RACE race." & dialog --msgbox "Cool, so $CHARNAME is from the $RACE race." 100 50  
-espeak "Next, let us decide where $CHARNAME hails from. What should their home kingdom be called? Press enter to continue." & dialog --msgbox "Next, let us decide where $CHARNAME hails from. What should their home kingdom be called? Press ENTER to continue." 100 50 
+flite -voice rms "Cool, so $CHARNAME is from the $RACE race." & dialog --msgbox "Cool, so $CHARNAME is from the $RACE race." 100 50  
+flite -voice rms "Next, let us decide where $CHARNAME hails from. What should their home kingdom be called? Press enter to continue." & dialog --msgbox "Next, let us decide where $CHARNAME hails from. What should their home kingdom be called? Press ENTER to continue." 100 50 
 
 # take input for the location. the data will be stored as a variable called PLACE
 read -p "Where does $CHARNAME come from? Come up with a creative name for a location: " PLACE
 
 # take all of the desired input, verify it. if the player is happy, move onto Scene 1 of the game by invoking scene1.sh. if not, exit so the player can restart the game. 
-espeak "So, $NAME. We have decided that your character is named $CHARNAME, is of the $RACE race, and comes from the kingdom of $PLACE." & dialog --msgbox "So, $NAME. We have decided that your character is named $CHARNAME, is of the $RACE race, and comes from the kingdom of $PLACE." 100 50 
+flite -voice rms "So, $NAME. We have decided that your character is named $CHARNAME, is of the $RACE race, and comes from the kingdom of $PLACE." & dialog --msgbox "So, $NAME. We have decided that your character is named $CHARNAME, is of the $RACE race, and comes from the kingdom of $PLACE." 100 50 
 
 # ask the user if they are happy with these choices using an if-then condition
-espeak "Are you happy with this character, $NAME? Type yes or no on the next screen to decide. Press enter to continue." & dialog --msgbox "Are you happy with this character, $NAME? Type YES or NO on the next screen to decide. Press ENTER to continue." 100 50 
+flite -voice rms "Are you happy with this character, $NAME? Type yes or no on the next screen to decide. Press enter to continue." & dialog --msgbox "Are you happy with this character, $NAME? Type YES or NO on the next screen to decide. Press ENTER to continue." 100 50 
 
 read -p "Are you happy with this configuration? Please enter YES or NO: " ANSWER
 
@@ -76,7 +76,7 @@ read -p "Are you happy with this configuration? Please enter YES or NO: " ANSWER
 		echo "RACE='$RACE'" >> variables.txt	  # append the RACE variable to the textfile
 		echo "PLACE='$PLACE'" >> variables.txt   # append the PLACE variable to the textfile
 		./first-scene.sh		# launch into the first scene of the game
-	else espeak "Oh no! Let us start again until you get it right." & dialog --msgbox "Oh no! Let us start again until you get it right." 100 50 && exit && ./scene-1.sh
+	else flite -voice rms "Oh no! Let us start again until you get it right." & dialog --msgbox "Oh no! Let us start again until you get it right." 100 50 && exit && ./scene-1.sh
 	# if an answer other than YES is given, the script will exit and reload, giving the player the chance to begin their character creation process again.
 	fi
 exit 
