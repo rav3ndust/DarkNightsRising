@@ -12,7 +12,7 @@ Dark Nights Rising is free and open-source software licensed under the MIT licen
 
 I would eventually like to make this something fun to play on Linux desktops and Linux phones, regardless of which distro they are running on.
 
-# dependecies
+# dependencies
 
 *dialog* and *flite*. Both programs should be available in every major Linux distribution's repositories. 
 
