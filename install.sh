@@ -17,8 +17,8 @@ echo "Installing Dark Nights Rising..."
 
 sudo apt install flite dialog -y
 
-# make each script executable
-sudo chmod +x intro.sh && sudo chmod +x first-scene.sh
+# make each script (Game Scene) executable
+sudo chmod +x intro.sh && sudo chmod +x first-scene.sh && sudo chmod +x second-scene.sh
 
 # make the game invokeable systemwide. 
 #
