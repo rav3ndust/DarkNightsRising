@@ -152,10 +152,17 @@ function elseClosingVoice {
 function elseClosingMenu {
 	dialog --msgbox "It is time to explore your inner demons, $NAME. Press ENTER to continue." 100 50 
 }
+# soundtrack-related functions
+function executeFirstSceneTrack {			# execute the First Scene song through mpg123
+	mpg123 -q soundtrack/time_space.mp3
+}
+function muteTrack { 						# kill any running instances of mpg123
+	killall mpg123
+}
 ###################################################################################################
 # run the script
 ###################################################################################################
-mpg123 -q soundtrack/time_space.mp3 & voice1 & menu1
+executeFirstSceneTrack & voice1 & menu1
 voice2 & menu2
 voice3 & menu3
 voice4 & menu4
@@ -177,6 +184,6 @@ read -p "Please enter LOOK or BACK AWAY to decide: " LOOKORBACK
              elseVoice3 & elseMenu3
 			 elsevoice4 & elseMenu4
 		     elseClosingVoice & elseClosingMenu
-             killall mpg123 && ./second-scene.sh		# kill running soundtrack instances and run the 'second-scene.sh' script to launch into the second scene of the game
+             muteTrack && ./second-scene.sh		# kill running soundtrack instances and run the 'second-scene.sh' script to launch into the second scene of the game
         fi
 exit
