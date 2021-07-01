@@ -178,7 +178,7 @@ read -p "Please enter LOOK or BACK AWAY to decide: " LOOKORBACK
 			 conditionalVoice4 & conditionalMenu4 
         	 conditionalVoice5 & conditionalMenu5     	 
 			 conditionalVocalEnd & conditionalMenuEnd
-             killall mpg123 && ./second-scene.sh		# kill running soundtrack instances and run the 'second-scene.sh' script to launch into the second scene of the game
+             muteTrack && ./second-scene.sh		# kill running soundtrack instances and run the 'second-scene.sh' script to launch into the second scene of the game
         else elseVoice1 & elseMenu1
              elseVoice2 & elseMenu2
              elseVoice3 & elseMenu3
