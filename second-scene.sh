@@ -140,7 +140,7 @@ function closingMenu {
 #run the script									#
 #################################################
 # let's begin the second scene of the game
-voice1 & menu1
+mpg123 -q soundtrack/copy.mp3 & voice1 & menu1
 voice2 & menu2 
 voice3 & menu3
 voice4 & menu4
@@ -158,13 +158,13 @@ read -p "What would you like to do with the Demons? Please type RESIST or ASSIMI
 		collective2 & collective2Menu
 		statementVoice4 & statementMenu4
 		statementVoice5 & statementMenu5
-		./third-scene.sh	# launch into the Third Scene of the game
+		killall mpg123 && ./third-scene.sh	# kill the music and launch into the Third Scene of the game
 	else elseVocal1 & elseMenus1
-	collective3 & collective3menu
-	collective4 & collective4menu
-	voice7 & menu7
-	voice8 & menu8
-	closingVoice & closingMenu
-	./third-scene.sh	# launch into the Third Scene of the game
+		collective3 & collective3menu
+		collective4 & collective4menu
+		voice7 & menu7
+		voice8 & menu8
+		closingVoice & closingMenu
+		killall mpg123 && ./third-scene.sh	# kill the music and launch into the Third Scene of the game
 	fi	#end the if-then condition, exit the script
 exit
