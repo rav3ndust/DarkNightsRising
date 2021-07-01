@@ -116,13 +116,20 @@ function elseVocalPrompt {
 function elseMenuPrompt {
 	dialog --msgbox "Oh no! Let us start again until you get it right." 100 50
 }
+# soundtrack-related functions
+function executeIntroTrack {			# start the Intro Scene song
+	mpg123 -q soundtrack/kasper.wav
+}
+function muteTrack {					# kill any running instances of mpg123
+	killall mpg123
+}
 ###################################################################################################
 # run the script
 ###################################################################################################
 # we will launch the beginning track of the game using mpg123. right now, we're using a test track. 
 # eventually, the actual soundtrack will be written, and it will be placed here. 
 # intro part, beginning the soundtrack as well
-mpg123 -q soundtrack/time_space.mp3 & voice1 & menu1
+executeIntroTrack & voice1 & menu1
 voice2 & menu2
 # take the user input
 namePromptVoice & namePromptMenu
@@ -162,9 +169,9 @@ read -p "Are you happy with this configuration? Please enter YES or NO: " ANSWER
 		echo "CHARNAME='$CHARNAME'" >> variables.txt	# append the CHARNAME variable to the textfile
 		echo "RACE='$RACE'" >> variables.txt	  # append the RACE variable to the textfile
 		echo "PLACE='$PLACE'" >> variables.txt   # append the PLACE variable to the textfile
-		killall mpg123 && ./first-scene.sh		# kill music, launch into the first scene of the game
-	else killall mpg123 	# kill  any running instance of mpg123
-		 elseVocalPrompt & elseMenuPrompt && exit
+		muteTrack && ./first-scene.sh		# kill music, launch into the first scene of the game
+	else muteTrack 	# kill  any running instance of mpg123
+		elseVocalPrompt & elseMenuPrompt && exit
 	# if an answer other than YES is given, the script will exit and reload, giving the player the chance to begin their character creation process again.
 	fi
 exit 
