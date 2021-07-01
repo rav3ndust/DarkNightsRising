@@ -155,7 +155,7 @@ function elseClosingMenu {
 ###################################################################################################
 # run the script
 ###################################################################################################
-voice1 & menu1
+mpg123 -q soundtracks/time_space.mp3 & voice1 & menu1
 voice2 & menu2
 voice3 & menu3
 voice4 & menu4
@@ -171,12 +171,12 @@ read -p "Please enter LOOK or BACK AWAY to decide: " LOOKORBACK
 			 conditionalVoice4 & conditionalMenu4 
         	 conditionalVoice5 & conditionalMenu5     	 
 			 conditionalVocalEnd & conditionalMenuEnd
-             ./second-scene.sh		# run the 'second-scene.sh' script to launch into the second scene of the game
+             killall mpg123 && ./second-scene.sh		# kill running soundtrack instances and run the 'second-scene.sh' script to launch into the second scene of the game
         else elseVoice1 & elseMenu1
              elseVoice2 & elseMenu2
              elseVoice3 & elseMenu3
 			 elsevoice4 & elseMenu4
 		     elseClosingVoice & elseClosingMenu
-             ./second-scene.sh		# run the 'second-scene.sh' script to launch into the second scene of the game
+             killall mpg123 && ./second-scene.sh		# kill running soundtrack instances and run the 'second-scene.sh' script to launch into the second scene of the game
         fi
 exit
