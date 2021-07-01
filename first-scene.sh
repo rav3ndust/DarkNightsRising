@@ -155,7 +155,7 @@ function elseClosingMenu {
 ###################################################################################################
 # run the script
 ###################################################################################################
-mpg123 -q soundtracks/time_space.mp3 & voice1 & menu1
+mpg123 -q soundtrack/time_space.mp3 & voice1 & menu1
 voice2 & menu2
 voice3 & menu3
 voice4 & menu4
