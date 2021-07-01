@@ -18,13 +18,13 @@ function voice1 {
 	flite -voice rms "After a strong sensation of being lifted into the air, and a general feeling of being dazed, and confused, you wonder if the whole experience was real or not."
 }
 function menu1 {
-	dialog --msgbox  "After a strong sensation of being lifted into the air, and a general feeling of being dazed, and confused, you wonder if the whole experience was real or not." 100 50
+	dialog --msgbox "After a strong sensation of being lifted into the air, and a general feeling of being dazed, and confused, you wonder if the whole experience was real or not." 100 50
 }
 function voice2 {
 	flite -voice rms "Suddenly, with no warning at all, you hear the sound of laughter and a shrill collection of voices calling out to you, as if they know exactly who you are."
 }
 function menu2 {
-	dialog --msgbox  "Suddenly, with no warning at all, you hear the sound of laughter and a shrill collection of voices calling out to you, as if they know exactly who you are." 100 50
+	dialog --msgbox "Suddenly, with no warning at all, you hear the sound of laughter and a shrill collection of voices calling out to you, as if they know exactly who you are." 100 50
 }
 function voice3 {
 	flite -voice rms "The voices spoke the following:"
@@ -42,13 +42,13 @@ function voice5 {
 	flite -voice kal "Now, $CHARNAME of the $RACE race, from the land of $PLACE, don't try to hide your true character. Allow yourself to be assimilated by your deepest desires. We can help you feel like you have a purpose again." & flite -voice slt   "Now, $CHARNAME of $RACE, from the land of $PLACE, do not try to hide your true character. Allow yourself to be assimilated by your deepest desires. We can help you feel like you have a purpose again."	
 }
 function menu5 {
-	dialog --msgbox  "Now, $CHARNAME of $RACE, from the land of $PLACE, do not try to hide your true character. Allow yourself to be assimilated by your deepest desires. We can help you feel like you have a purpose again." 100 50
+	dialog --msgbox "Now, $CHARNAME of $RACE, from the land of $PLACE, do not try to hide your true character. Allow yourself to be assimilated by your deepest desires. We can help you feel like you have a purpose again." 100 50
 }
 function voice6 {
 	flite -voice rms "You do not know what to do. You are conflicted. Are these demons telling you the truth? Or are they conspiring against you in order to take control of your mind?"
 }
 function menu6 {
-	dialog --msgbox   "You do not know what to do. You are conflicted. Are these demons telling you the truth? Or are they conspiring against you in order to take control of your mind?" 100 50
+	dialog --msgbox "You do not know what to do. You are conflicted. Are these demons telling you the truth? Or are they conspiring against you in order to take control of your mind?" 100 50
 }
 function vocalPrompt {
 	flite -voice rms "Think carefully, because you only get one chance here. What would you like to say to the demons? Do you choose to resist, or assimilate? Press Enter to continue."	
@@ -79,19 +79,19 @@ function vocalCollective {
 	flite -voice kal "How dare you defy us! You will pay for this with the ultimate retribution. We already have control over your mind, don't you see? We exist within you, a part of your very being!" & flite -voice slt  "How dare you defy us! You will pay for this with the ultimate retribution. We already have control over your mind, don't you see? We exist within you, a part of your very being!"
 }
 function menuCollective {
-	dialog --msgbox  "'How dare you defy us! You will pay for this with the ultimate retribution. We already have control over your mind, don't you see? We exist within you, a part of your very being!'" 100 50
+	dialog --msgbox "'How dare you defy us! You will pay for this with the ultimate retribution. We already have control over your mind, don't you see? We exist within you, a part of your very being!'" 100 50
 }
 function collective2 {
 	flite -voice kal "You will roam the dark halls of your disturbed mind for years, and you will never find a true escape. We will torment you in a prison of your own creation until the day you die." & flite -voice slt "You will roam the dark halls of your disturbed mind for years, and you will never find a true escape. We will torment you in a prison of your own creation until the day you die." 
 }
 function collective2Menu {
-	dialog --msgbox  "'You will roam the dark halls of your disturbed mind for years, and you will never find a true escape. We will torment you in a prison of your own creation until the day you die.'" 100 50
+	dialog --msgbox "'You will roam the dark halls of your disturbed mind for years, and you will never find a true escape. We will torment you in a prison of your own creation until the day you die.'" 100 50
 }
 function statementVoice4 {
 	lite -voice rms "You breathe a sigh of relief. The demons have vanished, for now. Knowing they will be back, you take a deep sigh, and press on through the dark corridor in front of you, feeling as though you are being watched the whole time."
 }
 function statementMenu4 {
-	dialog --msgbox  "You breathe a sigh of relief. The demons have vanished, for now. Knowing they will be back, you take a deep sigh, and press on through the dark corridor in front of you, feeling as though you are being watched the whole time." 100 50
+	dialog --msgbox "You breathe a sigh of relief. The demons have vanished, for now. Knowing they will be back, you take a deep sigh, and press on through the dark corridor in front of you, feeling as though you are being watched the whole time." 100 50
 }
 function statementVoice5 {
 	flite -voice rms "It is not over yet. To get out of this nightmare, it is going to truly take confronting these demons at some point. The question is, will you be ready when you encounter them again? Press enter to continue."
@@ -104,19 +104,19 @@ function elseVocal1 {
 	flite -voice rms "I will join you, you say to the demons. I have been facing this mental lapse for far too long. I am ready for some kind of reprieve. The demons laugh, staring at you with intent. They then scream in yet another shrill scream:"
 }
 function elseMenus1 {
-	dialog --msgbox  "'I will join you,' you say to the demons. 'I have been facing this mental lapse for far too long. I am ready for some kind of reprieve.' The demons laugh, staring at you with intent. They then shout in yet another shrill scream:" 100 50
+	dialog --msgbox "'I will join you,' you say to the demons. 'I have been facing this mental lapse for far too long. I am ready for some kind of reprieve.' The demons laugh, staring at you with intent. They then shout in yet another shrill scream:" 100 50
 }
 function collective3 {
 		flite -voice kal "You really thought it would be that easy? We owe you a lifetime of darkness and retribution for the sins you have committed in your life. This is your own mental prison that you have constructed for yourself, and we are the gatekeepers." & flite -voice slt  "You really thought it would be that easy? We owe you a lifetime of darkness and retribution for the sins you have committed in your life. This is your own mental prison that you have constructed for yourself, and we are the gatekeepers."
 }
 function collective3menu {
-	dialog --msgbox  "'You really thought it would be that easy? We owe you a lifetime of darkness and retribution for the sins you have committed in your life. This is your own mental prison that you have constructed for yourself, and we are the gatekeepers.'" 100 50
+	dialog --msgbox "'You really thought it would be that easy? We owe you a lifetime of darkness and retribution for the sins you have committed in your life. This is your own mental prison that you have constructed for yourself, and we are the gatekeepers.'" 100 50
 }
 function collective4 {
 	flite -voice kal "Just wait. We are going to force you to traverse the hallways of your disturbed mind, and allow you to see exactly the circumstances of the sins you have committed throughout the years." & flite -voice slt  "Just wait. We are going to force you to traverse the hallways of your disturbed mind, and allow you to see exactly the circumstances of the sins you have committed throughout the years."
 }
 function collective4menu {
-	dialog --msgbox  "'Just wait. We are going to force you to traverse the hallways of your disturbed mind, and allow you to see exactly the circumstances of the sins you have committed throughout the years.'" 100 50
+	dialog --msgbox "'Just wait. We are going to force you to traverse the hallways of your disturbed mind, and allow you to see exactly the circumstances of the sins you have committed throughout the years.'" 100 50
 }
 function voice7 {
 	flite -voice kal "We will be back. Your day of reckoning is upon you, $CHARNAME." & flite -voice slt "We will be back. Your day of reckoning is upon you, $CHARNAME."
@@ -128,19 +128,26 @@ function voice8 {
 	flite -voice rms "You take a deep breath as the Demons finally stop shouting, and vanish into thin air. With a fast beating heart and no idea what to expect next, you know it is time to press on."
 }
 function menu8 {
-	dialog --msgbox  "You take a deep breath as the Demons finally stop shouting, and vanish into thin air. With a fast beating heart and no idea what to expect next, you know it is time to press on." 100 50
+	dialog --msgbox "You take a deep breath as the Demons finally stop shouting, and vanish into thin air. With a fast beating heart and no idea what to expect next, you know it is time to press on." 100 50
 }
 function closingVoice {
-	flite -voice rms  "It is not over yet. To get out of this nightmare, it is going to truly take confronting these demons at some point. The question is, will you be ready when you encounter them again? Press enter to continue."
+	flite -voice rms "It is not over yet. To get out of this nightmare, it is going to truly take confronting these demons at some point. The question is, will you be ready when you encounter them again? Press enter to continue."
 }
 function closingMenu {
-	dialog --msgbox  "It is not over yet. To get out of this nightmare, it is going to truly take confronting these demons at some point. The question is, will you be ready when you encounter them again? Press ENTER to continue." 100 50
+	dialog --msgbox "It is not over yet. To get out of this nightmare, it is going to truly take confronting these demons at some point. The question is, will you be ready when you encounter them again? Press ENTER to continue." 100 50
+}
+# soundtrack-related functions
+function executeSecondTrack {
+	mpg123 -q soundtrack/copy.mp3
+}
+function muteTrack {
+	killall mpg123
 }
 #################################################
 #run the script									#
 #################################################
 # let's begin the second scene of the game
-mpg123 -q soundtrack/copy.mp3 & voice1 & menu1
+executeSecondTrack & voice1 & menu1
 voice2 & menu2 
 voice3 & menu3
 voice4 & menu4
@@ -158,13 +165,13 @@ read -p "What would you like to do with the Demons? Please type RESIST or ASSIMI
 		collective2 & collective2Menu
 		statementVoice4 & statementMenu4
 		statementVoice5 & statementMenu5
-		killall mpg123 && ./third-scene.sh	# kill the music and launch into the Third Scene of the game
+		muteTrack && ./third-scene.sh	# kill the music and launch into the Third Scene of the game
 	else elseVocal1 & elseMenus1
 		collective3 & collective3menu
 		collective4 & collective4menu
 		voice7 & menu7
 		voice8 & menu8
 		closingVoice & closingMenu
-		killall mpg123 && ./third-scene.sh	# kill the music and launch into the Third Scene of the game
+		muteTrack && ./third-scene.sh	# kill the music and launch into the Third Scene of the game
 	fi	#end the if-then condition, exit the script
 exit
