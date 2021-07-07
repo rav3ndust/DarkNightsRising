@@ -17,7 +17,7 @@ function voice1 {
 }
 
 function menu1 {
-	dialog --msgbox "Let us get started." 100 50
+	dialog --msgbox "Let us get started." 0 0
 }
 # The next part of the story will involve the player learning about their location
 function voice2 {
@@ -25,7 +25,7 @@ function voice2 {
 }
 
 function menu2 {
-	dialog --msgbox "$CHARNAME wakes up in their home, feeling isolated and lethargic." 100 50 
+	dialog --msgbox "$CHARNAME wakes up in their home, feeling isolated and lethargic." 0 0 
 }
 
 function voice3 {
@@ -33,7 +33,7 @@ function voice3 {
 }
 
 function menu3 {
-	dialog --msgbox "The area around you begins to swirl, almost as if you were in a haze." 100 50 	
+	dialog --msgbox "The area around you begins to swirl, almost as if you were in a haze." 0 0 	
 }
  
 function voice4 {
@@ -41,7 +41,7 @@ function voice4 {
 }
 
 function menu4 {
-	dialog --msgbox "$CHARNAME wakes up in front of a mirror, with a sinister-looking reflection staring back at them." 100 50  
+	dialog --msgbox "$CHARNAME wakes up in front of a mirror, with a sinister-looking reflection staring back at them." 0 0  
 }
 
 function voice5 {
@@ -49,7 +49,7 @@ function voice5 {
 }
 
 function menu5 {
-	dialog --msgbox "You feel a sense of dread as you look into the mirror. What do you do?" 100 50 
+	dialog --msgbox "You feel a sense of dread as you look into the mirror. What do you do?" 0 0 
 }
 
 function firstVoicePrompt {
@@ -57,7 +57,7 @@ function firstVoicePrompt {
 }
 
 function firstMenuPrompt {
-	dialog --msgbox "Would you like to look into the mirror, or back away? Press ENTER to continue." 100 50 
+	dialog --msgbox "Would you like to look into the mirror, or back away? Press ENTER to continue." 0 0 
 }
 # the player will then be presented with a choice in the script. let's move on. 
 # we now need to build out some functions for the if/then condition that will be coming. 
@@ -68,7 +68,7 @@ function conditionalVoice1 { 								# first vocal part
 }
 
 function conditionalMenu1 { 							# first menu option
-	 dialog --msgbox "You stare into the mirror, and see a demonic face looking back at you." 100 50
+	 dialog --msgbox "You stare into the mirror, and see a demonic face looking back at you." 0 0
 }
 
 function conditionalVoice2 { 							# second vocal part
@@ -76,7 +76,7 @@ function conditionalVoice2 { 							# second vocal part
 }
 
 function conditionalMenu2 {  							# second menu option
-	dialog --msgbox "The Demon says the following:" 100 50 
+	dialog --msgbox "The Demon says the following:" 0 0 
 }
 
 function conditionalVoice3 { 							# third vocal part
@@ -84,7 +84,7 @@ function conditionalVoice3 { 							# third vocal part
 }
 
 function conditionalMenu3 { 							# third menu option
-	dialog --msgbox "'Hello, $CHARNAME of $PLACE. I know your heart, and I know your spirit. You are not the only one of the $RACE kind feeling this way. Together, we can help you realize your true potential.'" 100 50
+	dialog --msgbox "'Hello, $CHARNAME of $PLACE. I know your heart, and I know your spirit. You are not the only one of the $RACE kind feeling this way. Together, we can help you realize your true potential.'" 0 0
 }
 
 function conditionalVoice4 { 							# fourth vocal part
@@ -92,7 +92,7 @@ function conditionalVoice4 { 							# fourth vocal part
 }
 
 function conditionalMenu4 { 							# fourth menu option
-	dialog --msgbox "You feel terrified. You do not know what to do next, only that your heart feels like it is sinking into your chest." 100 50
+	dialog --msgbox "You feel terrified. You do not know what to do next, only that your heart feels like it is sinking into your chest." 0 0
 }
 
 function conditionalVoice5 { 							# fifth vocal part
@@ -100,7 +100,7 @@ function conditionalVoice5 { 							# fifth vocal part
 }
 
 function conditionalMenu5 { 							# fifth menu option
-	dialog --msgbox "You hear the sound of a gust of wind as you are seemingly pulled into the mirror." 100 50
+	dialog --msgbox "You hear the sound of a gust of wind as you are seemingly pulled into the mirror." 0 0
 }
 # this is the part that leads into launching the second-scene script
 function conditionalVocalEnd {
@@ -108,7 +108,7 @@ function conditionalVocalEnd {
 }
 
 function conditionalMenuEnd {
-	dialog --msgbox "It is time to explore your inner demons, $NAME. Press ENTER to continue." 100 50 
+	dialog --msgbox "It is time to explore your inner demons, $NAME. Press ENTER to continue." 0 0 
 }
 # make the "else" functions for the if/then condition
 ##############################################################
@@ -118,7 +118,7 @@ function elseVoice1 {
 }
 
 function elseMenu1 {
-	dialog --msgbox "You begin to back away slowly, only to hear a huge howl." 100 50
+	dialog --msgbox "You begin to back away slowly, only to hear a huge howl." 0 0
 }
 
 function elseVoice2 {
@@ -126,7 +126,7 @@ function elseVoice2 {
 }
 
 function elseMenu2 {
-	dialog --msgbox "You wonder what it could have been, only to see a demonic face appearing in the mirror." 100 50
+	dialog --msgbox "You wonder what it could have been, only to see a demonic face appearing in the mirror." 0 0
 }
 
 function elseVoice3 {
@@ -134,7 +134,7 @@ function elseVoice3 {
 }
 
 function elseMenu3 {
-	dialog --msgbox "Out of the blue, you hear an evil voice shout the following: 'Hello, $CHARNAME of $PLACE. I know your heart, and I know your spirit. You are not the only one of the $RACE kind feeling this way. Together, we can help you realize your true potential.'" 100 50 
+	dialog --msgbox "Out of the blue, you hear an evil voice shout the following: 'Hello, $CHARNAME of $PLACE. I know your heart, and I know your spirit. You are not the only one of the $RACE kind feeling this way. Together, we can help you realize your true potential.'" 0 0 
 }
 
 function elseVoice4 {
@@ -142,7 +142,7 @@ function elseVoice4 {
 }
 
 function elseMenu4 {
-	dialog --msgbox "Suddenly, a gust of wind grabs you out of nowhere, and you are forced headfirst into the mirror, whether you like it or not." 100 50
+	dialog --msgbox "Suddenly, a gust of wind grabs you out of nowhere, and you are forced headfirst into the mirror, whether you like it or not." 0 0
 }
 
 function elseClosingVoice {
@@ -150,11 +150,11 @@ function elseClosingVoice {
 }
 
 function elseClosingMenu {
-	dialog --msgbox "It is time to explore your inner demons, $NAME. Press ENTER to continue." 100 50 
+	dialog --msgbox "It is time to explore your inner demons, $NAME. Press ENTER to continue." 0 0 
 }
 # soundtrack-related functions
 function executeFirstSceneTrack {			# execute the First Scene song through mpg123
-	mpg123 -q soundtrack/time_space.mp3
+	mpg123 -q soundtrack/awakening.mp3
 }
 function muteTrack { 						# kill any running instances of mpg123
 	killall mpg123
