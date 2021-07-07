@@ -31,7 +31,7 @@ function voice1 {
 }
 
 function menu1 {
-	dialog --msgbox "Hello. Welcome to Dark Night Rising. This is a game about finding yourself, but keep in mind that the journey is not about the destination, but the path it takes to get there." 100 50	
+	dialog --msgbox "Hello. Welcome to Dark Night Rising. This is a game about finding yourself, but keep in mind that the journey is not about the destination, but the path it takes to get there." 0 0	
 } 
 # Next, we want the player to introduce themselves to us, and select what kind of experience they would like to have. 
 function voice2 {
@@ -39,7 +39,7 @@ function voice2 {
 }
 
 function menu2 {
-	dialog --msgbox "I am Raven, your guide through this game. Please tell me a little about yourself." 100 50 
+	dialog --msgbox "I am Raven, your guide through this game. Please tell me a little about yourself." 0 0 
 }
 #
 # start with NAME. the script should read the user's input as their name, and the variable can be called using NAME from now on.
@@ -48,7 +48,7 @@ function namePromptVoice {
 } 
 
 function namePromptMenu {
-	dialog --msgbox "So, wanderer. What is your name? Press enter to continue." 100 50 
+	dialog --msgbox "So, wanderer. What is your name? Press enter to continue." 0 0 
 }
 
 # move onto the next part
@@ -57,7 +57,7 @@ function voice3 {
 }
 
 function menu3 {
-	dialog --msgbox "It is nice to meet you, $NAME. Now let us learn a little more about you." 100 50 
+	dialog --msgbox "It is nice to meet you, $NAME. Now let us learn a little more about you." 0 0 
 }
 
 function charNameVoicePrompt {
@@ -65,7 +65,7 @@ function charNameVoicePrompt {
 }
 
 function charNameMenuPrompt {
-	dialog --msgbox "So, tell me, $NAME, what would like to call your character? Press ENTER to continue." 100 50
+	dialog --msgbox "So, tell me, $NAME, what would like to call your character? Press ENTER to continue." 0 0
 }
 
 # define the functions for the RACE variable
@@ -74,7 +74,7 @@ function charRaceVoicePrompt {
 }
 
 function charRaceMenuPrompt {
-	dialog --msgbox "Excellent. What race will $CHARNAME hail from? Be creative. Press enter to continue." 100 50 
+	dialog --msgbox "Excellent. What race will $CHARNAME hail from? Be creative. Press enter to continue." 0 0 
 }
 
 # move onto the next phase
@@ -83,7 +83,7 @@ function voice4 {
 }
 
 function menu4 {
-	dialog --msgbox "Cool, so $CHARNAME is from the $RACE race." 100 50 
+	dialog --msgbox "Cool, so $CHARNAME is from the $RACE race." 0 0 
 }
 # move onto the character location functions
 function placeVoicePrompt {
@@ -91,7 +91,7 @@ function placeVoicePrompt {
 }
 
 function placeMenuPrompt {
-	dialog --msgbox "Next, let us decide where $CHARNAME hails from. What should their home kingdom be called? Press ENTER to continue." 100 50	
+	dialog --msgbox "Next, let us decide where $CHARNAME hails from. What should their home kingdom be called? Press ENTER to continue." 0 0	
 }
 #move onto the next phase
 function verifyVoicePrompt {
@@ -99,7 +99,7 @@ function verifyVoicePrompt {
 }
 
 function verifyMenuPrompt {
-	dialog --msgbox "So, $NAME. We have decided that your character is named $CHARNAME, is of the $RACE race, and comes from the kingdom of $PLACE." 100 50	
+	dialog --msgbox "So, $NAME. We have decided that your character is named $CHARNAME, is of the $RACE race, and comes from the kingdom of $PLACE." 0 0	
 }
 
 function verifyVoice2 {
@@ -107,18 +107,18 @@ function verifyVoice2 {
 }
 
 function verifyMenu2 {
-	dialog --msgbox "Are you happy with this character, $NAME? Type YES or NO on the next screen to decide. Press ENTER to continue." 100 50 
+	dialog --msgbox "Are you happy with this character, $NAME? Type YES or NO on the next screen to decide. Press ENTER to continue." 0 0 
 }
 # define the function for "else" in the if/then condition 
 function elseVocalPrompt {
 	flite -voice rms "Oh no! Let us start again until you get it right."
 }
 function elseMenuPrompt {
-	dialog --msgbox "Oh no! Let us start again until you get it right." 100 50
+	dialog --msgbox "Oh no! Let us start again until you get it right." 0 0
 }
 # soundtrack-related functions
 function executeIntroTrack {			# start the Intro Scene song
-	mpg123 -q soundtrack/kasper.wav
+	mpg123 -q soundtrack/haunted.mp3
 }
 function muteTrack {					# kill any running instances of mpg123
 	killall mpg123
