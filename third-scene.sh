@@ -119,11 +119,11 @@ voice3 & menu3
 voice4 & menu4
 voice5 & menu5
 voice6 & menu6
-# make an if-then condition to progress to the next scene
+# prepare to ask for input from the user
 conditionVocal1 & conditionMenu1
 # take the user's input
 read -p "What would you like to do? Please choose CONTINUE or ESCAPE: " CONTESCAPE
-
+# make an if-then condition to progress to the next scene
 	if [[ $CONTESCAPE = "CONTINUE" ]];
 		then thenConditionVocal1 & thenConditionMenu1
 		thenConditionVocal2 & thenConditionMenu2
