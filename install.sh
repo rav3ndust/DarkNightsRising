@@ -45,5 +45,5 @@ sudo cp intro.sh /usr/bin/darknightsrising
 notify-send "DarkNightsRising Installer" "Thanks for installing Dark Nights Rising! Enjoy."
 echo "Dark Nights Rising is installed. Please start it by executing the intro.sh script or typing darknightsrising from anywhere on your GNU/Linux system."
 echo "Enjoy the game! If you need any help, please see https://github.com/rav3ndust/DarkNightsRising to file bugs or learn more."
-
+sleep 1
 exit
