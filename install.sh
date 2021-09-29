@@ -30,7 +30,11 @@ chmod +x second-scene.sh
 chmod +x third-scene.sh
 chmod +x fourth-scene.sh
 chmod +x fifth-scene.sh
-
+################################
+# make the animations executable
+cd animations 
+chmod +x testani.sh && cd ..chmod  # return the previous working dir 
+################################
 # make the game invokeable systemwide. 
 #
 # calling the game will begin it from the intro scene until we make some sort of saving function.
