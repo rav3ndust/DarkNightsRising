@@ -33,7 +33,7 @@ chmod +x fifth-scene.sh
 ################################
 # make the animations executable
 cd animations 
-chmod +x testani.sh && cd ..chmod  # return the previous working dir 
+chmod +x testani.sh && cd ..  # return the previous working dir 
 ################################
 # make the game invokeable systemwide. 
 #
