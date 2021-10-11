@@ -24,6 +24,6 @@ while True:
     if event == gui.WIN_CLOSED or event == 'Exit the Game':
         break
     print('Exiting the game!')
-
+# close the window, notify the user the program successfully exited
 welcomeWindow.close()
 os.system('notify-send "Dark Nights Rising" "Program closed."')
