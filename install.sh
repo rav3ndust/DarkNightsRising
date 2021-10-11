@@ -19,9 +19,10 @@ echo "Installing Dark Nights Rising..."
 # - mpg123 is used to control the game's soundtrack 
 # - dialog is used to present the game's GUI elements
 # - python and pysimplegui for the python port
-#
+# - libnotify for sending user notifications 
+# 
 # more deps may be required as development goes on, but I am striving to keep things as minimal as possible. 
-sudo apt install python3 python-tk python3-pip flite dialog mpg123 -y
+sudo apt install libnotify-bin python3 python-tk python3-pip flite dialog mpg123 -y
 pip install PySimpleGUI
 # make each script (Game Scene) executable
 chmod +x deathScript.sh
