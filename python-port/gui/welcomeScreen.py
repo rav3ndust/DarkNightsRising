@@ -10,8 +10,19 @@ import PySimpleGUI as gui
 import os
 # import the theming for the window
 gui.theme('Dark')
+# define the functions
+def playButton():                   # when the user clicks "Play"
+    os.system('cd .. && cd .. && ./intro.sh')
+    os.system('notify-send "Dark Nights Rising" "Launching the game..."')
+'''
+We need to build out the functionality for how the user will load their previous progress in the game.
+
+The previous data should be able to be called when the user selects the "Load Previous Game."
+'''
+#def loadPreviousGame():
+
 # add the stuff inside the window
-windowLayout = [[gui.Text("Welcoe to Dark Nights Rising!")],
+windowLayout = [[gui.Text("Welcome to Dark Nights Rising!")],
                 [gui.Text("Can you handle your inner demons?")],
                 [gui.Text("Select an option below to get started.")],
                 [gui.Button('Play'), gui.Button('Load Previous Game')],
@@ -23,6 +34,9 @@ while True:
     event, values = welcomeWindow.read()
     if event == gui.WIN_CLOSED or event == 'Exit the Game':
         break
+    elif event == 'Play':
+        playButton()
+    
     print('Exiting the game!')
 # close the window, notify the user the program successfully exited
 welcomeWindow.close()
