@@ -24,7 +24,7 @@ We need to build out the functionality for how the user will load their previous
 The previous data should be able to be called when the user selects the "Load Previous Game."
 '''
 #def loadPreviousGame():
-
+    #expressions
 # add the stuff inside the window
 windowLayout = [[gui.Text("Welcome to Dark Nights Rising!")],
                 [gui.Text("Can you handle your inner demons?")],
@@ -42,6 +42,8 @@ while True:
         playButton()
     elif event == 'Delete Previous Game':
         deletePreviousGame()
+    #else event == 'Load Previous Game:'
+        #loadPreviousGame()
     print('Exiting the game!')
 # close the window, notify the user the program successfully exited
 welcomeWindow.close()
