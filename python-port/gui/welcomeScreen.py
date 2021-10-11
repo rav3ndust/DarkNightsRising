@@ -5,7 +5,7 @@ We are going to try to make it into a Python package so it can be easily portabl
 
 This is the first welcome screen. We're using PySimpleGUI to easily build out the UI.
 '''
-#initial Welcome Window for DarkNightsRising
+# initial Welcome Window for DarkNightsRising
 import PySimpleGUI as gui
 import os
 # import the theming for the window
