@@ -35,7 +35,7 @@ windowLayout = [[gui.Text("Welcome to Dark Nights Rising!")],
                 [gui.Text("Ready? Select an option below to get started.")],
                 [gui.Button('Play'), gui.Button('Load Previous Game')],
                 [gui.Button('Delete Previous Game'), gui.Button('Exit the Game')]]   
-# spawn the window
+# create a window ("welcomeWindow"), and assign it to our window layout ("windowLayout")
 welcomeWindow = gui.Window('Dark Nights Rising', windowLayout)
 # loop for processing events and taking inputs 
 while True:
