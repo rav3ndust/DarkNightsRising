@@ -11,6 +11,8 @@ import os
 # import the theming for the window
 gui.theme('Dark')
 # define the functions
+def installButton():                # when the user clicks "Install"
+    os.system('python3 installingScreen.py')
 def playButton():                   # when the user clicks "Play"
     os.system('cd .. && cd .. && ./intro.sh')
     os.system('notify-send "Dark Nights Rising" "Launching the game..."')
@@ -28,7 +30,9 @@ The previous data should be able to be called when the user selects the "Load Pr
 # add the stuff inside the window
 windowLayout = [[gui.Text("Welcome to Dark Nights Rising!")],
                 [gui.Text("Can you handle your inner demons?")],
-                [gui.Text("Select an option below to get started.")],
+                [gui.Text("Install the game's dependencies by clicking the 'Install' button below.")],
+                [gui.Button('Install Dark Nights Rising')],
+                [gui.Text("Ready? Select an option below to get started.")],
                 [gui.Button('Play'), gui.Button('Load Previous Game')],
                 [gui.Button('Delete Previous Game'), gui.Button('Exit the Game')]]   
 # spawn the window
@@ -38,12 +42,14 @@ while True:
     event, values = welcomeWindow.read()
     if event == gui.WIN_CLOSED or event == 'Exit the Game':
         break
-    elif event == 'Play':
-        playButton()
+    elif event == 'Install Dark Nights Rising':
+        installButton()         # run the installButton function
+    elif event == 'Play':   
+        playButton()            # run the playButton function
     elif event == 'Delete Previous Game':
-        deletePreviousGame()
+        deletePreviousGame()    # run the deletePreviousGame function    
     #else event == 'Load Previous Game:'
-        #loadPreviousGame()
+        #loadPreviousGame()     # run the loadPreviousGame function
     print('Exiting the game!')
 # close the window, notify the user the program successfully exited
 welcomeWindow.close()
