@@ -7,19 +7,17 @@ This is the first welcome screen
 '''
 #initial Welcome Window for DarkNightsRising
 import PySimpleGUI as gui
-
-gui.theme('Black')  #theming
-
+import os
+# import the theming for the window
+gui.theme('Dark')
 # add the stuff inside the window
-windowLayout = [[gui.Text("Welcome to Dark Nights Rising!")],
+windowLayout = [[gui.Text("Welcoe to Dark Nights Rising!")],
                 [gui.Text("Can you handle your inner demons?")],
                 [gui.Text("Select an option below to get started.")],
                 [gui.Button('Play'), gui.Button('Load Previous Game')],
                 [gui.Button('Delete Previous Game'), gui.Button('Exit the Game')]]   
-
 # spawn the window
 welcomeWindow = gui.Window('Dark Nights Rising', windowLayout)
-
 # loop for processing events and taking inputs 
 while True:
     event, values = welcomeWindow.read()
@@ -28,3 +26,4 @@ while True:
     print('Exiting the game!')
 
 welcomeWindow.close()
+os.system('notify-send "Dark Nights Rising" "Program closed."')
