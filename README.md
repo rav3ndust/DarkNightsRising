@@ -25,9 +25,12 @@ When work on the installation script for the game is finished, I will hope to ha
 # how to play
 
 You can play the game just by making sure you have these two dependencies installed on your machine: 
-    - dialog
-    - flite
-    - mpg123
+
+- dialog
+- flite
+- mpg123
+- python3 & pip 
+
 To launch the game, just run it as you would any other Bash script on your system. 
 
 Make sure you type in your responses EXACTLY AS THEY APPEAR in the prompts when playing the game. At the moment, player responses *are* case-sensitive. I hope to fix this as development on the game goes on. 
