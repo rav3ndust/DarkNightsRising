@@ -18,13 +18,13 @@ I would eventually like to make this something fun to play on Linux desktops and
 
 # dependencies
 
-*dialog*, *mpg123*, and *flite*. These programs should be available in every major Linux distribution's repositories. 
+*dialog*, *mpg123*, *flite*, *python3*, and *pip*. These programs should be available in every major Linux distribution's repositories. 
 
 When work on the installation script for the game is finished, I will hope to have it check for the dependencies and auto-install them if they aren't already on the player's machine. 
 
 # how to play
 
-You can play the game just by making sure you have these two dependencies installed on your machine: 
+You can play the game just by making sure you have these few dependencies installed on your machine: 
 
 - dialog
 - flite
