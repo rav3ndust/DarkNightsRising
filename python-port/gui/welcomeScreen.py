@@ -3,7 +3,7 @@ This is the beginning of the Python port of DarkNightsRising.
 
 We are going to try to make it into a Python package so it can be easily portable across systems. 
 
-This is the first welcome screen
+This is the first welcome screen. We're using PySimpleGUI to easily build out the UI.
 '''
 #initial Welcome Window for DarkNightsRising
 import PySimpleGUI as gui
