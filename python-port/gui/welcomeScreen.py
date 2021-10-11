@@ -14,6 +14,10 @@ gui.theme('Dark')
 def playButton():                   # when the user clicks "Play"
     os.system('cd .. && cd .. && ./intro.sh')
     os.system('notify-send "Dark Nights Rising" "Launching the game..."')
+def deletePreviousGame():           # when the user clicks "Delete Previous Game"
+    os.system('notify-send "Dark Nights Rising" "Deleting previous data..."')
+    os.system('cd .. && cd .. && rm -r variables.txt')
+    os.system('notify-send "Dark Nights Rising" "Save data deleted."')
 '''
 We need to build out the functionality for how the user will load their previous progress in the game.
 
@@ -36,7 +40,8 @@ while True:
         break
     elif event == 'Play':
         playButton()
-    
+    elif event == 'Delete Previous Game':
+        deletePreviousGame()
     print('Exiting the game!')
 # close the window, notify the user the program successfully exited
 welcomeWindow.close()
