@@ -2,7 +2,7 @@
 
 ### Thanks for checking out **_Dark Nights Rising_!** 
 
-This is a game that harkens back to the older days of text adventure games (for example, *Oregon Trail*). These games were tons of fun, and evoked your imagination - as they had no real graphics of any substance, their stories and the way they pulled you into their world was what got you into those games. 
+This is a game that harkens back to the older days of text adventure games (for example, **_Oregon Trail_**). These games were tons of fun, and evoked your imagination - as they had no real graphics of any substance, their stories and the way they pulled you into their world was what got you into those games. 
 
 **_Dark Nights Rising_** is text-to-speech, and also sports some original music as the "soundtrack" to the game to give it a deeper feel. The game is about fighting the demons inside of yourself, and conceptualizes some abstract ideas I have thought about (and struggled with) in my own life. 
 
