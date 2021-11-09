@@ -1,14 +1,14 @@
-## Thanks for checking out **Dark Nights Rising**. 
+## Thanks for checking out **_Dark Nights Rising_**. 
 
-This is a game that harkens back to the older days of text adventure games (for example, *Oregeon Trail*). These games were tons of fun, and evoked your imagination - as they had no real graphics of any substance, their stories and the way they pulled you into their world was what got you into those games. 
+This is a game that harkens back to the older days of text adventure games (for example, *Oregon Trail*). These games were tons of fun, and evoked your imagination - as they had no real graphics of any substance, their stories and the way they pulled you into their world was what got you into those games. 
 
-**Dark Nights Rising** is text-to-speech, and also sports some original music as the "soundtrack" to the game to give it a deeper feel. The game is about fighting the demons inside of yourself, and conceptualizes some abstract ideas I have thought about (and struggled with) in my own life. 
+**_Dark Nights Rising_** is text-to-speech, and also sports some original music as the "soundtrack" to the game to give it a deeper feel. The game is about fighting the demons inside of yourself, and conceptualizes some abstract ideas I have thought about (and struggled with) in my own life. 
 
 The game is written almost entirely in **Bash**, with a **Python** port being developed in parallel. 
 
 ### How Does it Work? 
 
-**Dark Nights Rising** is currently playable in its earky state on GNU/Linux distributions. Right now, the scripts are dependent on Debian-based distributions since that is what I develop on, but eventualy the aim is to support all distros, and indeed, other platforms such as \*BSD Windows and macOS. 
+**_Dark Nights Rising_** is currently playable in its earky state on GNU/Linux distributions. Right now, the scripts are dependent on Debian-based distributions since that is what I develop on, but eventualy the aim is to support all distros, and indeed, other platforms such as \*BSD Windows and macOS. 
 
 I also plan to optimize it for Linux-based mobile phones, using my PinePhone as a testing ground. 
 
@@ -24,7 +24,7 @@ Next, run the installer script:
 
 ``` ./installer.sh ``` 
 
-Assuming there are no errors after the installer has finished, you will be able to call **Dark Nights Rising** from anywhere in your terminal sinply by running ```darknightsrising```. 
+Assuming there are no errors after the installer has finished, you will be able to call **_Dark Nights Rising_** from anywhere in your terminal sinply by running ```darknightsrising```. 
 
 Enjoy! Note that it is not currently finished, but you can play through the scenes that are available to get an idea for what the idea is like. 
 
