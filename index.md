@@ -11,6 +11,8 @@ This is a game that harkens back to the older days of text adventure games (for 
 
 The game is written almost entirely in **Bash**, with a **Python** port being developed in parallel. 
 
+### ===
+
 ### How Does it Work? 
 
 **_Dark Nights Rising_** is currently playable in its early state on GNU/Linux distributions. Right now, the scripts are dependent on Debian-based distributions since that is what I develop on, but eventually the aim is to support all distros, and indeed, other platforms such as \*BSD, Windows, and macOS. 
@@ -33,15 +35,21 @@ Assuming there are no errors after the installer has finished, you will be able 
 
 Enjoy! Note that it is not currently finished, but you can play through the scenes that are available to get an idea for what the idea is like. 
 
+### ===
+
 ### System dependencies 
 
 **Dark Nights Rising** aims to be light and not use too many dependencies. However, like most programs these days, we have to bloat it up a little bit. To that end, I still am trying to keep everything minimal. 
 
 Right now, the game relies on *dialog* for displaying messages to the user. *flite* takes care of the text-to-speech functions, while *mpg123* handles playing the game's soundtrack. A Python port is also underway as a side project, which depends (so far) on *python3* and *SimplePyGUI*. 
 
+### ===
+
 ### Contributing
 
 If you have any ideas, please feel free to contribute them to this game! You can always submit a pull request to the [Dark Nights Rising testing repo](https://github.com/rav3ndust/DarkNightsRising/tree/dev) if you have something cool to add. 
+
+### ===
 
 ### Assorted Notes 
 
