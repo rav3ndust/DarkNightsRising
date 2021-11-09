@@ -3,6 +3,7 @@
 ### Thanks for checking out **_Dark Nights Rising_!**
 
 ![Dark Nights Rising welcome screenshot](img/DarkNightsRisingWelcome.png)
+##### The welcome screen from the game's Python port. 
 
 This is a game that harkens back to the older days of text adventure games (for example, **_Oregon Trail_**). These games were tons of fun, and evoked your imagination - as they had no real graphics of any substance, their stories and the way they pulled you into their world was what got you into those games. 
 
