@@ -13,7 +13,7 @@ The game is written almost entirely in **Bash**, with a **Python** port being de
 
 ### How Does it Work? 
 
-**_Dark Nights Rising_** is currently playable in its earky state on GNU/Linux distributions. Right now, the scripts are dependent on Debian-based distributions since that is what I develop on, but eventualy the aim is to support all distros, and indeed, other platforms such as \*BSD Windows and macOS. 
+**_Dark Nights Rising_** is currently playable in its earky state on GNU/Linux distributions. Right now, the scripts are dependent on Debian-based distributions since that is what I develop on, but eventually the aim is to support all distros, and indeed, other platforms such as \*BSD, Windows, and macOS. 
 
 I also plan to optimize it for Linux-based mobile phones, using my PinePhone as a testing ground. 
 
