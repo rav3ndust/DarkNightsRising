@@ -46,3 +46,7 @@ If you have any ideas, please feel free to contribute them to this game! You can
 ### Assorted Notes 
 
 Please note that this game is a side project of mine with absolutely zero funding, and no promise of scheduled times that I might be working on it. However, I will be working on it periodically as time goes on and I always welcome pull requests or [cryptocurrencies](https://rav3ndust.xyz/contribute.html) for anyone who feels compelled to help out for some reason. 
+
+### === 
+
+[My website](https://rav3ndust.xyz) | [Connect with me on Neighborli](https://neighborli.xyz/@rav3ndust) | [My Github](https://github.com/rav3ndust) 
