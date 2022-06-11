@@ -5,10 +5,10 @@
 	A text-based adventure game guided by a robot. 
 	
 	Global variables will be: 
-		- NAME: Name of the player. 
-		- CHARNAME: Desired character name.
-		- RACE: Character's in-game race.
-		- PLACE: Character's fictional hometown.
+		- _NAME: Name of the player. 
+		- _CHARNAME: Desired character name.
+		- _RACE: Character's in-game race.
+		- _PLACE: Character's fictional hometown.
 
 -- -- -- line vars -- -- --]]  
 --line 1
@@ -116,7 +116,7 @@ write2sources(_PLACE)
 print(_PLACE.." ".."written to sources file.")
 --[[ @TODO:
 
-We want to continue porting DKR over to lua. 
+We want to continue porting DNR over to lua. 
 
 This is experimental, but worth a shot for testing reasons. 
 
