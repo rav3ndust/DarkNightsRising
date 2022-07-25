@@ -73,6 +73,7 @@ function write2sources(data)
 	local sourcefile = io.open("sources.lua", w)
 	sourcefile:write(data)
 	sourcefile:close()
+end
 -- Script Begins Here
 a = "Please type your desired name: "
 b = "Please type your desired character name: "
