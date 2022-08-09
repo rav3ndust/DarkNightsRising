@@ -31,6 +31,10 @@ Press ENTER to continue.]]
 -- line 6
 l6 = [[What area is your character from?
 Press ENTER to continue.]] 
+-- verification 
+verify = "Are you happy with this character? Type 'YES' or 'NO' to decide."
+-- if not happy with character creation
+startAgain = "Oh no! Let us start again so you can get it right."
 -- -- -- functions -- -- -- 
 function sleep(seconds)
 	-- halts sys ops X seconds
@@ -115,13 +119,22 @@ _PLACE = io.read()
 -- write _PLACE to sourcefile.
 write2sources(_PLACE)
 print(_PLACE.." ".."written to sources file.")
+-- verify that the player is happy with choices.
+menu(verify)
+speak_RMS(verify)
+print(verify)
+characterCreated = io.read()
+if characterCreated == "YES" then
+	-- launch into the First Scene of the Game
+	os.execute('lua firstScene.lua')
+else 
+	-- start again to begin the character creation process. 
+	menu(startAgain)
+	speak_RMS(startAgain)
+	os.execute('rm -r library') -- remove library folder. it will be rewritten on next run. 
+	os.execute('lua intro.lua') -- restart the script.
 --[[ @TODO:
 
-We want to continue porting DNR over to lua. 
+Run tests.
 
-This is experimental, but worth a shot for testing reasons. 
-
-I'll continue the port and testing - will report back. 
-
-Finish scripting this part of the port soon.
 --]] 
