@@ -11,7 +11,7 @@ Dark Nights Rising is going to be about isolation and how the feeling of lonelin
 
 There is also some original soundtrack content and art that accompanies this game to add to the atmosphere and make it more interesting. 
 
-Dark Nights Rising is free and open-source software licensed under the GNU General Public License, and you can feel free to help make it better by contributing. 
+Dark Nights Rising is free and open-source software licensed under the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html), and you can feel free to help make it better by contributing. 
 
 I would eventually like to make this something fun to play on Linux desktops and Linux phones, regardless of which distro they are running on.
 
