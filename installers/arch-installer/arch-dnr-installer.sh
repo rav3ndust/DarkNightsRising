@@ -5,7 +5,7 @@
 # This script assumes an Arch Linux environment.
 ###########################
 dnr="Dark Nights Rising"
-pkgs="python3 python3-tk python3-pip flite dialog mpg123" 
+pkgs="python3 python-pip flite dialog mpg123" 
 gui="PySimpleGUI" 
 err="Sorry - something went wrong. Pleae check logs." 
 nTitle="$dnr Helper Script" 
