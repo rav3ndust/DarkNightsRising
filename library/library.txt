@@ -1,0 +1,9 @@
+# Dark Nights Rising Library 
+
+This file lives here to describe the Library and its purpose. 
+
+Certain .txt documents will get saved to this folder by Dark Nights Rising to source pieces of data from. 
+
+You can delete it, but it will cause issues in the game and will be automatically regenerated at certain points in the game.
+
+If its presence offends you, simply delete the /library folder anytime you find it auto-generated.
