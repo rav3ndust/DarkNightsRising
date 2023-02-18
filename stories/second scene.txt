@@ -1,0 +1,41 @@
+"After a strong sensation of being lifted into the air, and a general feeling of being dazed, and confused, you wonder if the whole experience was real or not."
+
+"Suddenly, with no warning at all, you hear the sound of laughter and a shrill collection of voices calling out to you, as if they know exactly who you are."
+
+"The voices spoke the following:"
+
+"Hello, $CHARNAME. We have always known you, we have always followed you. We know your every thought, we know every single move you make. You cannot hide anything from us, and you can have no secrets." & flite -voice slt  "Hello, $CHARNAME. We have always known you, we have always followed you. We know your every thought, we know every single move you make. You cannot hide anything from us, and you can have no secrets."
+
+"Now, $CHARNAME of the $RACE race, from the land of $PLACE, do not try to hide your true character. Allow yourself to be assimilated by your deepest desires. We can help you feel like you have a purpose again."
+
+"You do not know what to do. You are conflicted. Are these demons telling you the truth? Or are they conspiring against you in order to take control of your mind?"
+
+"Think carefully, because you only get one chance here. What would you like to say to the demons? Do you choose to resist, or assimilate? Press Enter to continue."
+
+Option 1
+"I refuse, you say calmly to the demons. I will not assimilate with you. I refuse to give you any control over my brain."
+
+"The demons are not happy about your decision. They shout a shrill, hellish scream, bringing the very feeling of dread itself into your soul."
+
+"Next, the demons have this to say."
+
+"How dare you defy us! You will pay for this with the ultimate retribution. We already have control over your mind, don't you see? We exist within you, a part of your very being!" & flite -voice slt  "How dare you defy us! You will pay for this with the ultimate retribution. We already have control over your mind, don't you see? We exist within you, a part of your very being!"
+
+"You will roam the dark halls of your disturbed mind for years, and you will never find a true escape. We will torment you in a prison of your own creation until the day you die." & flite -voice slt "You will roam the dark halls of your disturbed mind for years, and you will never find a true escape. We will torment you in a prison of your own creation until the day you die."
+
+"You breathe a sigh of relief. The demons have vanished, for now. Knowing they will be back, you take a deep sigh, and press on through the dark corridor in front of you, feeling as though you are being watched the whole time."
+
+"It is not over yet. To get out of this nightmare, it is going to truly take confronting these demons at some point. The question is, will you be ready when you encounter them again? Press enter to continue."
+
+Option 2
+"I will join you, you say to the demons. I have been facing this mental lapse for far too long. I am ready for some kind of reprieve. The demons laugh, staring at you with intent. They then scream in yet another shrill scream:"
+
+"You really thought it would be that easy? We owe you a lifetime of darkness and retribution for the sins you have committed in your life. This is your own mental prison that you have constructed for yourself, and we are the gatekeepers."
+
+"Just wait. We are going to force you to traverse the hallways of your disturbed mind, and allow you to see exactly the circumstances of the sins you have committed throughout the years."
+
+"We will be back. Your day of reckoning is upon you, $CHARNAME."
+
+"You take a deep breath as the Demons finally stop shouting, and vanish into thin air. With a fast beating heart and no idea what to expect next, you know it is time to press on."
+
+"It is not over yet. To get out of this nightmare, it is going to truly take confronting these demons at some point. The question is, will you be ready when you encounter them again? Press enter to continue."		
