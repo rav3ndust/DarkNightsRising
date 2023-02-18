@@ -1,0 +1,13 @@
+"They say if you die in a dream, you die in real life. This turned out to be true for $CHARNAME, who, after being killed by a Demon in the horrific state they had fallen into, slipped away from this life."
+
+"No one ever forgot $CHARNAME of $PLACE. The $RACE people always remembered them as someone who met their untimely end far too soon."
+
+"It might be too late for $CHARNAME, but it isn't too late for you, $NAME! Would you like to restart Dark Nights Rising, or would you like to quit for now? Quitting the game will clear your data."
+
+Option 1
+"Restarting the game. Good luck!"
+
+Option 2
+"Great, thanks for playing, $NAME! Your data will be cleared."
+
+		

@@ -1,0 +1,35 @@
+"Let us get started."
+
+"$CHARNAME wakes up in their home, feeling isolated and lethargic."
+
+"The area around you begins to swirl, almost as if you are in a haze."
+
+"$CHARNAME wakes up in front of a mirror, with a sinister looking reflection staring back at them."
+
+"You feel a sense of dread as you look into the mirror. What do you do?"
+
+"Would you like to look into the mirror, or back away? Press enter to continue."
+
+Option 1
+"You stare into the mirror, and see a demonic face looking back at you."
+
+"The demon says the following:"
+
+"Hello, $CHARNAME of $PLACE. I know your heart, and I know your spirit. You are not the only one of the $RACE kind feeling this way.Together, we can help you realize your true potential."
+
+"You feel terrified. You do not know what to do next, only that your heart feels like it is sinking into your chest."
+
+"You hear the sound of a gust of wind as you are seemingly pulled into the mirror."
+
+"It is time to explore your inner demons, $NAME. Press enter to continue."
+
+Option 2
+"You begin to back away slowly, only to hear a huge howl."
+
+"You wonder what it could have been, only to see a demonic face appearing in the mirror."
+
+"Out of the blue, you hear an evil voice shout the following. Hello, $CHARNAME of $PLACE. I know your heart, and I know your spirit. You are not the only one of the $RACE kind feeling this way. Together, we can help you realize your true potential."
+
+"Suddenly, a gust of wind grabs you out of nowhere, and you are forced headfirst into the mirror, whether you like it or not."
+
+"It is time to explore your inner demons, $NAME. Press enter to continue."		
