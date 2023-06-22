@@ -1,7 +1,7 @@
 #!/bin/bash
-
+set -euo pipefail
 # this is an installation script for the DarkNightsRising game. 
-
+#
 # this script will make DarkNightsRising globally executable on your linux system. 
 #
 # after installation, just type "darknightsrising" in your terminal to play the game from anywhere in your system. 
@@ -10,7 +10,6 @@
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 notify-send "DarkNightsRising Installer" "Currently installing Dark Nights Rising. Hold tight..."
 echo "Installing Dark Nights Rising..."
-
 # install the dependencies for the games
 #
 # the required deps are flite, mpg123, python, pip, pysimplegui, and dialog
@@ -32,16 +31,15 @@ chmod +x second-scene.sh
 chmod +x third-scene.sh
 chmod +x fourth-scene.sh
 chmod +x fifth-scene.sh
-
+chmod +x sixth-scene.sh
+chmod +x seventh-scene.sh
+chmod +x eighth-scene.sh
 # make the game invokeable systemwide. 
 #
 # calling the game will begin it from the intro scene until we make some sort of saving function.
-
 sudo cp intro.sh /usr/bin/darknightsrising
-
 # notify the user that the process is complete
 notify-send "DarkNightsRising Installer" "Thanks for installing Dark Nights Rising! Enjoy."
 echo "Dark Nights Rising is installed. Please start it by executing the intro.sh script or typing darknightsrising from anywhere on your GNU/Linux system."
 echo "Enjoy the game! If you need any help, please see https://github.com/rav3ndust/DarkNightsRising to file bugs or learn more."
-
 exit
