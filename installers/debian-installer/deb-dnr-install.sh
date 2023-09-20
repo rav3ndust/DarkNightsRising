@@ -21,23 +21,33 @@ echo "Installing Dark Nights Rising..."
 # - libnotify for sending user notifications 
 # 
 # more deps may be required as development goes on, but I am striving to keep things as minimal as possible. 
-sudo apt install libnotify-bin python3 python-tk python3-pip flite dialog mpg123 -y
+core_pkgs=(
+    "libnotify-bin"
+    "python3" 
+    "python-tk" 
+    "python3-pip"
+    "flite" 
+    "dialog" 
+    "mpg123"
+)
+sudo apt-get update && sudo apt-get install $core_pkgs -y
 pip install PySimpleGUI
 # make each script (Game Scene) executable
-chmod +x deathScript.sh
-chmod +x intro.sh 
-chmod +x first-scene.sh
-chmod +x second-scene.sh
-chmod +x third-scene.sh
-chmod +x fourth-scene.sh
-chmod +x fifth-scene.sh
-chmod +x sixth-scene.sh
-chmod +x seventh-scene.sh
-chmod +x eighth-scene.sh
+# all Game Scenes live in the DarkNightsRising/scenes folder
+chmod +x ../scenes/deathScript.sh
+chmod +x ../scenes/intro.sh 
+chmod +x ../scenes/first-scene.sh
+chmod +x ../scenes/second-scene.sh
+chmod +x ../scenes/third-scene.sh
+chmod +x ../scenes/fourth-scene.sh
+chmod +x ../scenes/fifth-scene.sh
+chmod +x ../scenes/sixth-scene.sh
+chmod +x ../scenes/seventh-scene.sh
+chmod +x ../scenes/eighth-scene.sh
 # make the game invokeable systemwide. 
-#
-# calling the game will begin it from the intro scene until we make some sort of saving function.
-sudo cp intro.sh /usr/bin/darknightsrising
+# NOTE:
+# - calling the game will begin it from the intro scene until we make some sort of saving function.
+sudo cp ../scenes/intro.sh /usr/bin/darknightsrising
 # notify the user that the process is complete
 notify-send "DarkNightsRising Installer" "Thanks for installing Dark Nights Rising! Enjoy."
 echo "Dark Nights Rising is installed. Please start it by executing the intro.sh script or typing darknightsrising from anywhere on your GNU/Linux system."
