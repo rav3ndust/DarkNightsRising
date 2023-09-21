@@ -1,5 +1,7 @@
 # DarkNightsRising
 
+![dark-nights-rising-cover](https://github.com/rav3ndust/DarkNightsRising/assets/35274771/ba01135b-6490-497b-88d3-d03b8abe7384)
+
 Check out this game's [GitHub Pages site](https://rav3ndust.github.io/DarkNightsRising)!
 
 A simple, text-based adventure game with TTS. Aims to be playable on any Linux distribution, with minimal dependencies.
