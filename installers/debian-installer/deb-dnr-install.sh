@@ -9,7 +9,7 @@ set -euo pipefail
 # at the moment, the game assumes a Debian/Ubuntu-based distribution
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 notify-send "DarkNightsRising Installer" "Currently installing Dark Nights Rising. Hold tight..."
-echo "Installing Dark Nights Rising..."
+echo "Installing Dark Nights Rising..." && sleep 1
 # install the dependencies for the games
 #
 # the required deps are flite, mpg123, python, pip, pysimplegui, and dialog
@@ -51,5 +51,6 @@ sudo cp ../scenes/intro.sh /usr/bin/darknightsrising
 # notify the user that the process is complete
 notify-send "DarkNightsRising Installer" "Thanks for installing Dark Nights Rising! Enjoy."
 echo "Dark Nights Rising is installed. Please start it by executing the intro.sh script or typing darknightsrising from anywhere on your GNU/Linux system."
-echo "Enjoy the game! If you need any help, please see https://github.com/rav3ndust/DarkNightsRising to file bugs or learn more."
+sleep 1
+echo "Enjoy the game! If you need any help, please see https://github.com/rav3ndust/DarkNightsRising to file bugs or learn more." && sleep 1
 exit
