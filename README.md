@@ -5,6 +5,7 @@
 
 Check out this game's [GitHub Pages site](https://rav3ndust.github.io/DarkNightsRising)!
 
+# = = = 
 A simple, text-based adventure game with TTS. Aims to be playable on any Linux distribution, with minimal dependencies.
 
 The entire thing is written in shell script, and the game works together as a family of shell scripts. 
