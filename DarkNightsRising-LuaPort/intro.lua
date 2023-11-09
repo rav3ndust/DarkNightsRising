@@ -78,61 +78,67 @@ function write2sources(data)
 	sourcefile:write(data)
 	sourcefile:close()
 end
--- Script Begins Here
-a = "Please type your desired name: "
-b = "Please type your desired character name: "
-c = "Please type your desired character race: "
-d = "Please type your desired character location: " 
-os.execute('touch library/sources.lua') -- create the sourcefile
-menu(l1)
-speak_RMS(l1)
-menu(l2)
-speak_RMS(l2)
-menu(l3)
-speak_RMS(l3)
-print(a)
-_NAME = io.read()
--- write _NAME to sourcefile. 
-write2sources(_NAME) 
-print(_NAME.." ".."written to sources file.")
--- continue
-menu(l4) 
-speak_RMS(l4)
-print(b)
-_CHARNAME = io.read()
--- write _CHARNAME to sourcefile.
-write2sources(_CHARNAME) 
-print(_CHARNAME.." ".."written to sources file.")
--- continue 
-menu(l5) 
-speak_RMS(l5) 
-print(c) 
-_RACE = io.read()
--- write _RACE to sourcefile. 
-write2sources(_RACE) 
-print(_RACE.." ".."written to sources file.") 
--- continue
-menu(l6)
-speak_RMS(l6)
-print(d)
-_PLACE = io.read()
--- write _PLACE to sourcefile.
-write2sources(_PLACE)
-print(_PLACE.." ".."written to sources file.")
--- verify that the player is happy with choices.
-menu(verify)
-speak_RMS(verify)
-print(verify)
-characterCreated = io.read()
-if characterCreated == "YES" then
-	-- launch into the First Scene of the Game
-	os.execute('lua firstScene.lua')
-else 
-	-- start again to begin the character creation process. 
-	menu(startAgain)
-	speak_RMS(startAgain)
-	os.execute('rm -r library') -- remove library folder. it will be rewritten on next run. 
-	os.execute('lua intro.lua') -- restart the script.
+function main()
+	-- main function. 
+	-- script steps are organized here and then called as main() in entrypoint
+	a = "Please type your desired name: "
+	b = "Please type your desired character name: "
+	c = "Please type your desired character race: "
+	d = "Please type your desired character location: " 
+	os.execute('touch library/sources.lua') -- create the sourcefile
+	menu(l1)
+	speak_RMS(l1)
+	menu(l2)
+	speak_RMS(l2)
+	menu(l3)
+	speak_RMS(l3)
+	print(a)
+	_NAME = io.read()
+	-- write _NAME to sourcefile. 
+	write2sources(_NAME) 
+	print(_NAME.." ".."written to sources file.")
+	--continue
+	menu(l4) 
+	speak_RMS(l4)
+	print(b)
+	_CHARNAME = io.read()
+	-- write _CHARNAME to sourcefile.
+	write2sources(_CHARNAME) 
+	print(_CHARNAME.." ".."written to sources file.")
+	-- continue 
+	menu(l5) 
+	speak_RMS(l5) 
+	print(c) 
+	_RACE = io.read()
+	-- write _RACE to sourcefile. 
+	write2sources(_RACE) 
+	print(_RACE.." ".."written to sources file.") 
+	-- continue
+	menu(l6)
+	speak_RMS(l6)
+	print(d)
+	_PLACE = io.read()
+	-- write _PLACE to sourcefile.
+	write2sources(_PLACE)
+	print(_PLACE.." ".."written to sources file.")
+	-- verify that the player is happy with choices.
+	menu(verify)
+	speak_RMS(verify)
+	print(verify)
+	characterCreated = io.read()
+	if characterCreated == "YES" then
+		-- launch into the First Scene of the Game
+		os.execute('lua firstScene.lua')
+	else 
+		-- start again to begin the character creation process. 
+		menu(startAgain)
+		speak_RMS(startAgain)
+		os.execute('rm -r library') -- remove library folder. it will be rewritten on next run. 
+		os.execute('lua intro.lua') -- restart the script.
+	end
+end
+-- Script Entry Point
+main()
 --[[ @TODO:
 
 Run tests.
