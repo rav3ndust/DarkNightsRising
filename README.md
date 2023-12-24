@@ -51,7 +51,3 @@ If you do enjoy the game and want to help make it better faster, then the next s
 This game is free and open-source software licensed under the GPLv3 license. You are free to do whatever you would like with it, so long as the end result remains free and open-source software. If you'd like to help me make it better, please fork it, add whatever you would like, and send in your changes! If they are awesome and make sense with the concept of the game, I will merge them in. 
 
 > Audio and visual content (files kept in `/soundtrack` and `/graphics`) that accompanies the game is seperately released under the [Free Art License](https://artlibre.org/licence/lal/en/). 
-
-# TODO
-
-I am thinking of adding in a soundtrack of sorts for this game to add to the spook factor. I have all kinds of original ambient music I could use for this - I just need to figure out how to make it work best. If anyone reading this has some cool music they would like to add to a FOSS text-based game, let me know. 
