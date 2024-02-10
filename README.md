@@ -19,7 +19,7 @@ Dark Nights Rising is free and open-source software licensed under the [GNU Gene
 
 I would eventually like to make this something fun to play on Linux desktops and Linux phones, regardless of which distro they are running on.
 
-**I should note that I am also planning on working on a port of this game to Python to make it a little more portable to other systems, as well as to give it a bit of a nicer graphical user interface.**
+**I should note that I am also planning on working on a port of this game to Python to make it a little more portable to other systems, as well as to give it a bit of a nicer graphical user interface, for users who would prefer such.**
 
 **I will be working on this over time.**
 
