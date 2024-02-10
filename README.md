@@ -29,8 +29,6 @@ I would eventually like to make this something fun to play on Linux desktops and
 
 > psst...there's a handy set of installer scripts in the **/installers** folder. Just make sure to select the correct installer for your distribution. They're labeled - **/debian-installer**, **/arch-installer**, etc.
 
-When work on the installation script for the game is finished, I will hope to have it check for the dependencies and auto-install them if they aren't already on the player's machine. 
-
 # how to play
 
 You can play the game just by making sure you have these few dependencies installed on your machine: 
