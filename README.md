@@ -25,18 +25,16 @@ I would eventually like to make this something fun to play on Linux desktops and
 
 # dependencies
 
-*dialog*, *mpg123*, *flite*, *python3*, and *pip*. These programs should be available in every major Linux distribution's repositories. 
-
-> psst...there's a handy set of installer scripts in the **/installers** folder. Just make sure to select the correct installer for your distribution. They're labeled - **/debian-installer**, **/arch-installer**, etc.
-
-# how to play
-
-You can play the game just by making sure you have these few dependencies installed on your machine: 
-
 - dialog
 - flite
 - mpg123
 - python3 & pip 
+
+ These programs should be available in every major Linux distribution's repositories. 
+
+> psst...there's a handy set of installer scripts in the **/installers** folder. Just make sure to select the correct installer for your distribution. They're labeled - **/debian-installer**, **/arch-installer**, etc.
+
+# how to play
 
 To launch the game, just run it as you would any other Bash script on your system. 
 
