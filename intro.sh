@@ -31,7 +31,7 @@ say () {
 execute_track () {
 	# starts music
 	local track="soundtrack/haunted.mp3"
-	mpg123 -q ${track} > /dev/null 2>&1 & sleep 1
+	mpg123 -q ${track} > /dev/null 2>&1 &
 }
 kill_audio () {
 	# stops the music
