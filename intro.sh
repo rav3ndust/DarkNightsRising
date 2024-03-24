@@ -40,7 +40,7 @@ kill_audio () {
 small_loader_progression () {
 	local chars=" * - - - * * - - - * * - - - * * - - - * * - - - * "
 	printchars () {
-			printf '%s\n' "${chars}"
+		printf '%s\n' "${chars}"
 	}
 	printchars; sleep 2; printchars; sleep 2; printchars; sleep 2
 }
