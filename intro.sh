@@ -57,6 +57,7 @@ main () {
 		echo "CHARNAME='${CHARNAME}'" >> $playerconfig
 		echo "RACE='${RACE}'" >> $playerconfig
 		echo "PLACE='${PLACE}'" >> $playerconfig
+  		echo "SAVE_STATE=1" >> $playerconfig
 		kill_audio; bash first_scene.sh 		# launch into the first scene of the game
 	else
 		local oops="Oh no! Let's start again until you get it the way you want."
