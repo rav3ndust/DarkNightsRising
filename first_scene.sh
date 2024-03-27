@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# first_scene.sh
 set -e
 source playerconfig.txt
 source library/libdnr.sh
@@ -42,6 +43,7 @@ save_state () {
   sed -i 's/1/2/g' $playerconfig
 }
 stare_into_mirror () {
+  # option-based function.
   # runs if player selects 'stare into the mirror'
   echo "${x_line1}" & say rms "${x_line1}"; sleep 1
   echo "${x_line2}" & say rms "${x_line2}"; sleep 1
@@ -52,6 +54,7 @@ stare_into_mirror () {
   save_state; kill_audio; bash second_scene.sh
 }
 back_away_from_mirror () {
+  # option-based function.
   # runs if player selects 'back away from mirror'
   echo "${y_line1}" & say rms "${y_line1}"; sleep 1
   echo "${y_line2}" & say rms "${y_line2}"; sleep 1
