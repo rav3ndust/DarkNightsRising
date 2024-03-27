@@ -17,7 +17,7 @@ EOF
 # First Scene of Dark Nights Rising.
 # initial line vars
 line1="Let us get started..."
-line2="You wake up in your home, feeling isolated and lethargic."
+line2="You are in your home - feeling different, rather isolated and lethargic."
 line3="The area around you begins to swirl, almost as if you are in a haze."
 line4="You wake up in front of an ancient mirror, with a sinister-looking reflection staring back at you with black, deadpan eyes."
 line5="You feel a sense of dread as you approach the mirror closer. What do you do?"
