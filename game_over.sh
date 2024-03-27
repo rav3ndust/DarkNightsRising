@@ -33,7 +33,7 @@ restart_game () {
 quit_clear_session () {
     # quits the game, and deletes player data.
     playerconfig="playerconfig.txt"
-    local quitting="Quitting Dark Nights Rising..."
+    local quitting="Quitting Dark Nights Rising. Session data will be cleared."
     echo "${quitting}" & say rms "${quitting}"; sleep 1
     rm $playerconfig; kill_audio; exit
 }
