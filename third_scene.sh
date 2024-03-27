@@ -35,7 +35,7 @@ y_line4="With a howl, the glass in the mirror shatters to pieces, and the voice 
 y_line5="${x_line3}"
 # functions
 save_state () {
-    # saves state in playerconfig.
+  # saves state in playerconfig.
   # runs before transitioning to new scenes.
   local playerconfig="playerconfig.txt"
   sed -i 's/3/4/g' $playerconfig
