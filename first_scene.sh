@@ -83,12 +83,14 @@ main () {
         back_away_from_mirror
         ;;
       "Quit")
-        echo "Quitting Dark Nights Rising..."; sleep 1; kill_audio
-        exit
+        local quitting="Quitting Dark Nights Rising..."
+        echo "${quitting}" & say rms "${quitting}"; sleep 1
+        kill_audio; exit
         ;;
         *)
           # this section is in case the user selects an invalid opt.
-          echo "This isn't a valid selection.";;
+          echo "This isn't a valid selection. Please try again."
+          ;;
         esac
       done
 }
