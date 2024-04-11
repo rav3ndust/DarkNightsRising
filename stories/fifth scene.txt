@@ -1,17 +1,16 @@
 "As the Demon of Lust breathes his last breath, you hear a cracking sound behind you. You turn to see that the door in the cavern wall is sliding open."
 
-"You feel a warm breeze come through as the door opens wider, a reprieve from the icy cavern. Darkness is all that can be seen beyond. Will you continue on through the door? PRESS ENTER TO CONTINUE"
+"You feel a warm breeze come through as the door opens wider, a reprieve from the icy cavern. Darkness is all that can be seen beyond. Will you continue on through the door?"
 
-Option 1
-"You approach the now open door and peer into the inky depths beyond. The air is warm and dry, however is is too dark to see beyond the doorway."
+Option 1 - Go through the door
+"You approach the now open door and peer into the inky depths beyond. The air is warm and dry, however it is too dark to see beyond the doorway."	
 
 "Taking a deep breath and reminding yourself that there is no going back, you cross the threshold. The door slides closed behind you and you are envoloped in heat and darkness."
 
-Option 2
-"Instead of approaching the door, you lean against the icy side of the cavern wall, shock taking over your body after almost losing your life.You tell yourself that you just need to rest before moving on"
+Option 2 - take a break
+"Instead of approaching the door, you lean against the icy side of the cavern wall, shock taking over your body after almost losing your life.You tell yourself that you just need to rest before moving on."
 
 "You lose track of time as you sit, eyes growing heavy. You can no longer feel the cold seeping into your bones and your body has a thin layer of ice covering it. You hear a chilling laugh as the Demon of Lust rises and approaches you as your vision fades to black."
-
 
 
 
