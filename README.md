@@ -20,12 +20,18 @@ I would eventually like to make this something fun to play on Linux desktops and
 
 # dependencies
 
-- flite
-- mpg123
+*Dark Nights Rising* attempts to need as little deps as possible. Currently, we only need two:
+
+- `flite` - We use this for voice synthesis.
+- `mpg123` - We use this to play our original game soundtrack while the game is in progress.
 
 These programs should be available in every major Linux distribution's repositories. 
 
-> psst...there's a handy set of installer scripts in the **/installers** folder. Just make sure to select the correct installer for your distribution. They're labeled - **/debian-installer**, **/arch-installer**, etc.
+# Installation
+
+Installing *Dark Nights Rising* is easy! Just use our included installation scripts for your GNU/Linux distribution. The scripts install the needed dependencies and get everything ready for you to start playing.
+
+> psst...in case you can't find them, the installer scripts are in the **/installers** folder. Just make sure to select the correct installer for your distribution. They're labeled - **/debian-installer**, **/arch-installer**, etc.
 
 # how to play
 
@@ -38,5 +44,9 @@ If you do enjoy the game and want to help make it better faster, then the next s
 # contributing and development
 
 This game is free and open-source software licensed under the GPLv3 license. You are free to do whatever you would like with it, so long as the end result remains free and open-source software. If you'd like to help me make it better, please fork it, add whatever you would like, and send in your changes! If they are awesome and make sense with the concept of the game, I will merge them in. 
+
+# License
+
+All code in *Dark Nights Rising* is licensed under the GNU General Public License, version 3 ([GLPv3](https://www.gnu.org/licenses/gpl-3.0.en.html)).
 
 > Audio and visual content (files kept in `/soundtrack` and `/graphics`) that accompanies the game is seperately released under the [Free Art License](https://artlibre.org/licence/lal/en/). 
