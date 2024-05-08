@@ -5,7 +5,7 @@ source playerconfig.txt
 source library/libdnr.sh
 declare -i SAVE_STATE_TAG=5
 readonly storyfile="stories/fifth_scene.txt"
-soundtrack_audio=""
+soundtrack_audio=""	#todo! ADD TRACK HERE
 title_scene="$(cat << EOF
 #############################################
 #                                           #
@@ -55,22 +55,22 @@ main () {
 	select opt in "Go through the door." "Stop and rest." "Quit."; do
 	   case $opt in
 	      "Go through the door.")
-	         go_through_door
-	         ;;
+	        go_through_door
+	        ;;
 	      "Stop and rest.")
-	         rest_awhile
-	         ;;
+	        rest_awhile
+	        ;;
 	      "Quit.")
-	         local quitting="Quitting Dark Nights Rising..."
-  	   	   echo "${quitting}" & say rms "${quitting}"; sleep 1
-  	   	   kill_audio; exit 
-  	   	   ;;
+	        local quitting="Quitting Dark Nights Rising..."
+  	   	echo "${quitting}" & say rms "${quitting}"; sleep 1
+  	   	kill_audio; exit 
+  	   	;;
   	      *)
-           # this section is in case the user selects an invalid opt.
-           echo "This isn't a valid selection. Please try again."
-           ;;
-     esac
-  done 
+                # this section is in case the user selects an invalid opt.
+           	echo "This isn't a valid selection. Please try again."
+           	;;
+       esac
+    done 
 }
 # - - - entry
 main
