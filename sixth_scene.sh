@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # sixth_scene.sh
 set -e
 source playerconfig.txt
@@ -47,35 +47,35 @@ save_state () {
 fight_demon () {
 	# option-based function.
 	# this function runs when player selects "Fight the Demon"
-	echo "${x_line1}" && say rms "${x_line1}"; sleep 1
-	echo "${x_line2}" && say rms "${x_line2}"; sleep 1
-	echo "${x_line3}" && say kal "${x_line3}"; sleep 1
-	echo "${x_line4}" && say rms "${x_line4}"; sleep 1
+	echo "${x_line1}" & say rms "${x_line1}"; sleep 1
+	echo "${x_line2}" & say rms "${x_line2}"; sleep 1
+	echo "${x_line3}" & say kal "${x_line3}"; sleep 1
+	echo "${x_line4}" & say rms "${x_line4}"; sleep 1
 	save_state; kill_audio; bash seventh_scene.sh
 }
 surrender () {
 	# option-based function.
 	# this function runs when player selects "Surrender"
-	echo "${y_line1}" && say rms "${y_line1}"; sleep 1
-	echo "${y_line2}" && say kal "${y_line2}"; sleep 1
-	echo "${y_line3}" && say rms "${y_line3}"; sleep 1
+	echo "${y_line1}" & say rms "${y_line1}"; sleep 1
+	echo "${y_line2}" & say kal "${y_line2}"; sleep 1
+	echo "${y_line3}" & say rms "${y_line3}"; sleep 1
 	kill_audio; bash game_over.sh
 }
 main () {
 	clear
 	execute_track $soundtrack_audio
 	printf '%s\n' "${title_scene}"; sleep 3; small_loader_progression
-	echo "${line1}" && say rms "${line1}"; sleep 1
-	echo "${line2}" && say rms "${line2}"; sleep 1
-	echo "${line3}" && say rms "${line3}"; sleep 1
-	echo "${line4}" && say rms "${line4}"; sleep 1
-	echo "${line5}" && say rms "${line5}"; sleep 1
-	echo "${line6}" && say rms "${line6}"; sleep 1 
-	echo "${line7}" && say rms "${line7}"; sleep 1
-	echo "${line8}" && say kal "${line8}"; sleep 1
-	echo "${line9}" && say rms "${line9}"; sleep 1
-	echo "${line10}" && say kal "${line10}"; sleep 1
-	echo "${line11}" && say rms "${line11}"; sleep 1
+	echo "${line1}" & say rms "${line1}"; sleep 1
+	echo "${line2}" & say rms "${line2}"; sleep 1
+	echo "${line3}" & say rms "${line3}"; sleep 1
+	echo "${line4}" & say rms "${line4}"; sleep 1
+	echo "${line5}" & say rms "${line5}"; sleep 1
+	echo "${line6}" & say rms "${line6}"; sleep 1 
+	echo "${line7}" & say rms "${line7}"; sleep 1
+	echo "${line8}" & say kal "${line8}"; sleep 1
+	echo "${line9}" & say rms "${line9}"; sleep 1
+	echo "${line10}" & say kal "${line10}"; sleep 1
+	echo "${line11}" & say rms "${line11}"; sleep 1
 	PS3="What will you do? "
 	select opt in "Fight the Demon." "Surrender." "Quit."; do
 		case $opt in 
@@ -92,8 +92,8 @@ main () {
   	   	 		;;
   	   	 	*)
 	  	   	 # this section is in case the user selects an invalid opt.
-           		echo "This isn't a valid selection. Please try again."
-           		;;
+           			echo "This isn't a valid selection. Please try again."
+           			;;
 		esac
     done 
 }
