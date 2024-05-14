@@ -47,6 +47,6 @@ This game is free and open-source software licensed under the GPLv3 license. You
 
 # License
 
-All code in *Dark Nights Rising* is licensed under the GNU General Public License, version 3 ([GLPv3](https://www.gnu.org/licenses/gpl-3.0.en.html)).
+All code in *Dark Nights Rising* is licensed under the GNU General Public License, version 3 ([GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)).
 
 > Audio and visual content (files kept in `/soundtrack` and `/graphics`) that accompanies the game is seperately released under the [Free Art License](https://artlibre.org/licence/lal/en/). 
