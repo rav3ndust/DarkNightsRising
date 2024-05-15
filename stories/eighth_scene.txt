@@ -5,11 +5,12 @@
 "The room is quiet and the skeleton makes no movement. You begin to wander around the room in search of a way out. The gold and jewels rustle as you attempt to quietly walk about the room. After several minutes of searching, you give up looking for an exit in the smooth golden walls and lie down in the center of the room to wait for whatever will happen next."
 
 "As you lie there, you begin to think about what it would be like to have so many riches back home. You think of the comfort that you could live in and the delicacies that you would be able to indulge in. As you lie there, you begin to subconsciously run your hands through the treasures on the floor allowing the gold coins and jewels to slip through your fingers and clink together as they fall back to the floor."
-"You catch a glimpse of a red flash and notice the eyes of the dragons on the crown glimmering in the light. As you look at the crown, you feel a growing urge to try it on, even if just for a moment." 
 
-"You are mesmerized by the crown and the desire to wear it. Before you realize it, you have risen from the floor and are shambling your way to where the skeleton king is perched on his throne, the dragons eyes still glimmering with an ethereal glow. It is only when you see your outstretched hands grasping for the crown that you take pause, realizing what you are doing." DO YOU RESIST OR TAKE THE CROWN?
+"You catch a glimpse of a red flash and notice the eyes of the dragons on the crown glimmering in the light. As you look at the crown, you feel a growing urge to try it on, even if just for a moment."
 
-Option 1:
+"You are mesmerized by the crown and the desire to wear it. Before you realize it, you have risen from the floor and are shambling your way to where the skeleton king is perched on his throne, the dragons eyes still glimmering with an ethereal glow. It is only when you see your outstretched hands grasping for the crown that you take pause, realizing what you are doing."
+
+Option 1: "Resist"
 "You feel the urge to grab the crown trying to surge up more strongly within you and the glimmering eyes become brighter. You realize that you must be under a spell cast by the crown and begin to back away."
 
 "Come closer and take the crown of glory." You hear a soft voice say in your head. The pull of the crown is very strong but you resist and move back to the center of the room. "I have no need for glory and gold, only freedom." You say aloud. You feel the urge lessen slightly but the voice attempts to tempt you again, "With me you could obtain all the freedom you wish for."
@@ -18,7 +19,7 @@ Option 1:
 
 "You feel a strong wave wash over you that fills you with the desire to take the crown. You feel your legs trying to force you to stand but you remain firmly planted on the floor. You feel the strain of your body attempting to answer the call of the crown but mentally force yourself to stay rooted. You stay this way for what seems like hours, perspiration building up on your skin as you force yourself to stay rooted and resist the crown. As you feel your body beginning to give out to exhaustion, you scream out one final time, with all your might, "I WILL NOT BE SWAYED!". You see the glow of the dragons eyes dim before blacking out from exhaustion."
 
-Option 2:
+Option 2: "Take the crown."
 "The urge to take the crown is irresistable. You carefully lift the crown from the skeletal king's brow. The crown is warm in your hands and glows with ethereal light."
 
 ""Yes. Place the crown upon your brow and claim the glory you deserve." you hear a soft voice hiss inside your head. You carefully place the crown upon your head and the skeletal king's body disappears. You see that the once empty room is now filled with servants and trays of delectable food." 
