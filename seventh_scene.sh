@@ -48,8 +48,8 @@ give_up () {
 }
 main () {
     clear
-	  execute_track $soundtrack_audio
-	  printf '%s\n' "${title_scene}"; sleep 3; small_loader_progression
+    execute_track $soundtrack_audio
+    printf '%s\n' "${title_scene}"; sleep 3; small_loader_progression
     echo "${line1}" & say rms "${line1}"; sleep 1
     echo "${line2}" & say rms "${line2}"; sleep 1
     echo "${line3}" & say rms "${line3}"; sleep 1
