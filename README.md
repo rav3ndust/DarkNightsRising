@@ -5,20 +5,23 @@
 
 Check out this game's [GitHub Pages site](https://rav3ndust.github.io/DarkNightsRising)!
 
-A simple, text-based adventure game with TTS. Aims to be playable on any Linux distribution, with minimal dependencies.
+A simple, text-based adventure game with TTS. Aims to be playable on any GNU/Linux distribution, with minimal dependencies.
 
-The entire thing is written in shell script, and the game works together as a family of shell scripts. 
-Variables that need to be called through different scripts are done through an automatically-generated "playerconfig.txt" file. 
+## technical stuff
 
-Dark Nights Rising is going to be about isolation and how the feeling of loneliness can pervade your mind. The player aims to escape this situation through a series of fantasy scenarios that are affected by choices the player makes as the game goes on. 
+The entire thing is written in Bash, and the game works together as a family of scripts.
 
-There is also some original soundtrack content and art that accompanies this game to add to the atmosphere and make it more interesting. 
+Variables that need to be called through different scripts are done through an automatically-generated `playerconfig.txt` file. 
 
-Dark Nights Rising is free and open-source software licensed under the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html), and you can feel free to help make it better by contributing. 
+## story
 
-I would eventually like to make this something fun to play on Linux desktops and Linux phones, regardless of which distro they are running on.
+*Dark Nights Rising* is about isolation and how the feeling of loneliness can pervade your mind. The player aims to escape this situation through a series of fantasy scenarios that are affected by choices the player makes as the game goes on. 
 
-# dependencies
+There is also some original soundtrack content (by rav3ndust) and art (by RyokoUmbra) that accompanies this game to add to the atmosphere and make it more interesting. 
+
+We want to make this game something fun to play on GNU/Linux desktops and phones, regardless of which distribution they are running on.
+
+## dependencies
 
 *Dark Nights Rising* attempts to need as little deps as possible. Currently, we only need two:
 
@@ -27,25 +30,29 @@ I would eventually like to make this something fun to play on Linux desktops and
 
 These programs should be available in every major Linux distribution's repositories. 
 
-# Installation
+## installation
 
 Installing *Dark Nights Rising* is easy! Just use our included installation scripts for your GNU/Linux distribution. The scripts install the needed dependencies and get everything ready for you to start playing.
 
 > psst...in case you can't find them, the installer scripts are in the **/installers** folder. Just make sure to select the correct installer for your distribution. They're labeled - **/debian-installer**, **/arch-installer**, etc.
 
+Run `chmod +x installer.sh` on the appropriate installer for your distribution, and then run `bash installer.sh` in order for the script to handle dependencies installation and making the other game files executable.
+
 # how to play
 
-To launch the game, just run it as you would any other Bash script on your system. 
+To launch the game, just run `bash intro.sh` in order to begin playing! 
 
-Remember, this game is still a WIP, and is a side project. It has no funding and is simply being done for fun. Therefore, you can expect to find new bits of the game added to this repo every now and then if you enjoy playing it. When it is finished, I will aim to have some kind of actual "release" for it - I was thinking a full release on [itch](https://itch.io) would eventually be cool. 
+Remember, this game is still a WIP. It has no funding and is being written by [rav3ndust](https://rav3ndust.xyz) and [RyokoUmbra](https://github.com/RyokoUmbra) of the [Raven's Ridge](https://github.com/RavensRidge) collective. 
+
+Therefore, you can expect to find new bits of the game added to this repo every now and then if you enjoy playing it. When it is finished, we will aim to have some kind of actual "release" for it - we are thinking a full release on [itch](https://itch.io) would eventually be cool. 
 
 If you do enjoy the game and want to help make it better faster, then the next section is for you. 
 
 # contributing and development
 
-This game is free and open-source software licensed under the GPLv3 license. You are free to do whatever you would like with it, so long as the end result remains free and open-source software. If you'd like to help me make it better, please fork it, add whatever you would like, and send in your changes! If they are awesome and make sense with the concept of the game, I will merge them in. 
+This game is free and open-source software licensed under the GPLv3 license. You are free to do whatever you would like with it, so long as the end result also remains free and open-source software. If you'd like to help us make it better, please fork it, add whatever you would like, and send in your changes! If they are awesome and make sense with the concept of the game, I will merge them in. 
 
-# License
+# licenses
 
 All code in *Dark Nights Rising* is given to you under the GNU General Public License, version 3 ([GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)).
 
