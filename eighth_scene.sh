@@ -51,28 +51,28 @@ save_state () {
 resist () {
     # option-based function.
     # this function runs when player selects "Resist."
-	echo "${x_line1}" & say rms "${x_line1}"; sleep 1
-	echo "${x_line2}" & say kal "${x_line2}"; sleep 1
-	echo "${x_line3}" & say rms "${x_line3}"; sleep 1
-	echo "${x_line4}" & say kal "${x_line4}"; sleep 1
-	echo "${x_line5}" & say rms "${x_line5}"; sleep 1
-	echo "${x_line6}" & say rms "${x_line6}"; sleep 1
-	echo "${x_line7}" & say rms "${x_line7}"; sleep 1
-	echo "${x_line8}" & say rms "${x_line8}"; sleep 1    
-	save_state; kill_audio; bash ninth_scene.sh
+    echo "${x_line1}" & say rms "${x_line1}"; sleep 1
+    echo "${x_line2}" & say kal "${x_line2}"; sleep 1
+    echo "${x_line3}" & say rms "${x_line3}"; sleep 1
+    echo "${x_line4}" & say kal "${x_line4}"; sleep 1
+    echo "${x_line5}" & say rms "${x_line5}"; sleep 1
+    echo "${x_line6}" & say rms "${x_line6}"; sleep 1
+    echo "${x_line7}" & say rms "${x_line7}"; sleep 1
+    echo "${x_line8}" & say rms "${x_line8}"; sleep 1    
+    save_state; kill_audio; bash ninth_scene.sh
 }
 take_crown () {
     # option-based function.
     # this function runs when player selects "Take the crown."
-	echo "${y_line1}" & say rms "${y_line1}"; sleep 1
-	echo "${y_line2}" & say kal "${y_line2}"; sleep 1
-	echo "${y_line3}" & say rms "${y_line3}"; sleep 1
-	echo "${y_line4}" & say rms "${y_line4}"; sleep 1
-	echo "${y_line5}" & say rms "${y_line5}"; sleep 1
-	echo "${y_line6}" & say kal "${y_line6}"; sleep 1
-	echo "${y_line7}" & say rms "${y_line7}"; sleep 1
-	echo "${y_line8}" & say slt "${y_line8}"; sleep 1
-	echo "${y_line9}" & say rms "${y_line9}"; sleep 1
+    echo "${y_line1}" & say rms "${y_line1}"; sleep 1
+    echo "${y_line2}" & say kal "${y_line2}"; sleep 1
+    echo "${y_line3}" & say rms "${y_line3}"; sleep 1
+    echo "${y_line4}" & say rms "${y_line4}"; sleep 1
+    echo "${y_line5}" & say rms "${y_line5}"; sleep 1
+    echo "${y_line6}" & say kal "${y_line6}"; sleep 1
+    echo "${y_line7}" & say rms "${y_line7}"; sleep 1
+    echo "${y_line8}" & say slt "${y_line8}"; sleep 1
+    echo "${y_line9}" & say rms "${y_line9}"; sleep 1
     kill_audio; bash game_over.sh
 }
 main () {
