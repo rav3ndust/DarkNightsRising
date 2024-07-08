@@ -25,18 +25,22 @@ line6="You are mesmerized by the crown and the desire to wear it. Before you rea
 # opt 1 - Resist.
 x_line1="You feel the urge to grab the crown trying to surge up more strongly within you and the glimmering eyes become brighter. You realize that you must be under a spell cast by the crown and begin to back away."
 x_line2="'Come closer and take the crown of glory.'" # kal
-x_line3="You hear a soft voice say in your head. The pull of the crown is very strong but you resist and move back to the center of the room. 'I have no need for glory and gold, only freedom.' You say aloud. You feel the urge lessen slightly but the voice attempts to tempt you again,"
+x_line3="You hear a soft voice speak in your head. The pull of the crown is very strong but you resist and move back to the center of the room. 'I have no need for glory and gold, only freedom,' You say aloud. You feel the urge lessen slightly but the voice attempts to tempt you again:"
 x_line4="'With me you could obtain all the freedom you wish for.'" # kal
 x_line5="You sit down firmly in the center of the room. While the idea of having all the riches you could wish for is a tempting idea, you also know that true freedom means to be free also of influence. 'What you offer me is not true freedom, but freedom wrapped in a gilded cage. The freedom I desire has no ulterior motive,' you say with defiance."
-x_line6="You feel a strong wave wash over you that fills you with the desire to take the crown. You feel your legs trying to force you to stand but you remain firmly planted on the floor. You feel the strain of your body attempting to answer the call of the crown but mentally force yourself to stay rooted. You stay this way for what seems like hours, perspiration building up on your skin as you force yourself to stay rooted and resist the crown. As you feel your body beginning to give out to exhaustion, you scream out one final time, with all your might, 'I WILL NOT BE SWAYED!'. You see the glow of the dragons eyes dim before blacking out from exhaustion."
+x_line6="You feel a strong wave wash over you that fills you with the desire to take the crown. You feel your legs trying to force you to stand but you remain firmly planted on the floor. You feel the strain of your body attempting to answer the call of the crown but mentally force yourself to stay rooted. You stay this way for what seems like hours, perspiration building up on your skin as you force yourself to stay rooted and resist the crown. As you feel your body beginning to give out to exhaustion, you scream out one final time, with all your might:"
+x_line7="I WILL NOT BE SWAYED!" 
+x_line8="You see the glow of the dragon's eyes dim before blacking out from exhaustion."
 # opt 2 - Take the crown.
 y_line1="The urge to take the crown is irresistable. You carefully lift the crown from the skeletal king's brow. The crown is warm in your hands and glows with ethereal light."
-y_line2="'Yes. Place the crown upon your brow and claim the glory you deserve.'"
+y_line2="'Yes. Place the crown upon your brow and claim the glory you deserve.'"  # kal
 y_line3="You hear a soft voice hiss inside your head. You carefully place the crown upon your head and the skeletal king's body disappears. You see that the once empty room is now filled with servants and trays of delectable food."
 y_line4="You sit upon the throne and are immediately surrounded by beautiful young women bearing trays of food that you have only ever imagined tasting. A plate is presented to you, piled high with juicy meats and other delights. You eagerly grasp for the plate, mouth already watering. You grab a large turkey drum and tear into the meat, savoring the flavor and chewing slowly."
-y_line5="You barely hear the soft hissing voice in your head speaking, 'The ritual  is complete.' Between mouthfuls of food, you ask offhandedly 'So am I free to leave now?'. One of the women closest to you laughs softly and replies cheerfully:" 
-y_line6="'Oh, of course not! You are the new Demon of Greed's host. We will keep you fed and healthy so that your life force will sustain him. We expect that you will be able to feed our master for many centuries. You have such a strong spirit!'"
-y_line7="You drop the food you are holding and you hear a soft hissing laughter inside your head. You attempt to stand from the throne but find that you cannot move. As you begin to panic and struggle, you feel a wave of fog and sleep invade your mind. You see the beautiful women before you take on the form of hags before you are pulled into a deep eternal sleep."
+y_line5="You barely hear the soft hissing voice in your head speaking:" 
+y_line6="'The ritual  is complete.'"	# kal 
+y_line7="Between mouthfuls of food, you ask offhandedly 'So am I free to leave now?'. One of the women closest to you laughs softly and replies cheerfully:" 
+y_line8="'Oh, of course not! You are the new Demon of Greed's host. We will keep you fed and healthy so that your life force will sustain him. We expect that you will be able to feed our master for many centuries. You have such a strong spirit.'" # slt
+y_line9="You drop the food you are holding and you hear a soft hissing laughter inside your head. You attempt to stand from the throne but find that you cannot move. As you begin to panic and struggle, you feel a wave of fog and sleep invade your mind. You see the beautiful women before you take on the form of hags before you are pulled into a deep, eternal sleep."
 # functions
 save_state () {
     # saves state in playerconfig
@@ -47,13 +51,28 @@ save_state () {
 resist () {
     # option-based function.
     # this function runs when player selects "Resist."
-    # todo! fill out the rest of the logic in this function
-    save_state; kill_audio; bash ninth_scene.sh
+	echo "${x_line1}" & say rms "${x_line1}"; sleep 1
+	echo "${x_line2}" & say kal "${x_line2}"; sleep 1
+	echo "${x_line3}" & say rms "${x_line3}"; sleep 1
+	echo "${x_line4}" & say kal "${x_line4}"; sleep 1
+	echo "${x_line5}" & say rms "${x_line5}"; sleep 1
+	echo "${x_line6}" & say rms "${x_line6}"; sleep 1
+	echo "${x_line7}" & say rms "${x_line7}"; sleep 1
+	echo "${x_line8}" & say rms "${x_line8}"; sleep 1    
+	save_state; kill_audio; bash ninth_scene.sh
 }
 take_crown () {
     # option-based function.
     # this function runs when player selects "Take the crown."
-    # todo! fill out the rest of the logic in this function
+	echo "${y_line1}" & say rms "${y_line1}"; sleep 1
+	echo "${y_line2}" & say kal "${y_line2}"; sleep 1
+	echo "${y_line3}" & say rms "${y_line3}"; sleep 1
+	echo "${y_line4}" & say rms "${y_line4}"; sleep 1
+	echo "${y_line5}" & say rms "${y_line5}"; sleep 1
+	echo "${y_line6}" & say kal "${y_line6}"; sleep 1
+	echo "${y_line7}" & say rms "${y_line7}"; sleep 1
+	echo "${y_line8}" & say slt "${y_line8}"; sleep 1
+	echo "${y_line9}" & say rms "${y_line9}"; sleep 1
     kill_audio; bash game_over.sh
 }
 main () {
